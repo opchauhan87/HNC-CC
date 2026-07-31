@@ -1,0 +1,36 @@
+
+Sunday    2026-06-07
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+110001              110001        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-06-07 02:01:52  2026-06-07 02:01:52
+
+Monday    2026-06-08
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+110001              110001        2  0:00:00  0:00:00  3:02:40  0:00:00  3:02:40  3:02:40  2026-06-08 02:01:53  2026-06-08 05:04:33
+22000111            22000111      1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-06-08 11:21:24  2026-06-08 11:21:24
+Coway IVR Agent Ag2 230011        2  0:00:00  0:00:00  6:16:47  0:00:00  6:16:47  6:16:47  2026-06-08 05:04:33  2026-06-08 11:21:20
+
+Tuesday   2026-06-09
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+110001              110001        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-06-09 02:01:56  2026-06-09 02:01:56
+
+Wednesday 2026-06-10
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Thursday  2026-06-11
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+110001              110001        4  0:00:00  0:00:00 15:06:45  0:00:00 15:06:45 15:06:45  2026-06-11 02:01:57  2026-06-11 17:08:42
+
+Friday    2026-06-12
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent Ag2 230011        2  0:00:00  0:00:00  2:56:53  0:00:00  2:56:53  2:56:53  2026-06-12 02:01:56  2026-06-12 04:58:49
+
+Saturday  2026-06-13
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+100001              100001        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-06-13 02:02:00  2026-06-13 02:02:00

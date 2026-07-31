@@ -1,0 +1,40 @@
+
+Sunday    2026-03-08
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent     230011        2  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00 19:57:06  2026-03-08 00:23:11  2026-03-08 20:20:17
+
+Monday    2026-03-09
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent     230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-09 20:44:43  2026-03-09 20:44:43
+
+Tuesday   2026-03-10
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent 2   220011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-10 21:10:53  2026-03-10 21:10:53
+
+Wednesday 2026-03-11
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent 2   220011        3  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  8:25:37  2026-03-11 00:44:37  2026-03-11 09:10:14
+
+Thursday  2026-03-12
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8025                8025          9  0:00:12  0:00:29  0:01:59  0:00:05  0:02:45  0:02:57  2026-03-12 10:32:57  2026-03-12 10:35:54
+Coway IVR Agent     230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-12 20:42:39  2026-03-12 20:42:39
+Coway IVR Agent 2   220011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-12 20:42:32  2026-03-12 20:42:32
+
+Friday    2026-03-13
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+Coway IVR Agent     230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-13 20:55:55  2026-03-13 20:55:55
+Coway IVR Agent 2   220011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-13 20:56:05  2026-03-13 20:56:05
+
+Saturday  2026-03-14
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8025                8025          1  0:00:00  1:29:13  0:00:00  0:00:00  1:29:13  0:00:00  2026-03-14 18:41:41  2026-03-14 18:41:41
+Coway IVR Agent     230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-14 20:12:31  2026-03-14 20:12:31
+Coway IVR Agent 2   220011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-03-14 16:39:37  2026-03-14 16:39:37

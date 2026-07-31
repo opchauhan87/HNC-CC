@@ -1,0 +1,38 @@
+
+Sunday    2026-01-04
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Monday    2026-01-05
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Tuesday   2026-01-06
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8001 - IVR          8001          4  0:00:14  0:01:14  0:00:07  0:00:02  0:01:37  0:00:45  2026-01-06 13:58:29  2026-01-06 13:59:14
+
+Wednesday 2026-01-07
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+SPAY IVR Agent      230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-01-07 17:45:34  2026-01-07 17:45:34
+
+Thursday  2026-01-08
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8001 - IVR          8001          6  0:01:08  0:00:19  0:00:58  2:07:25  2:09:50  2:52:29  2026-01-08 13:28:11  2026-01-08 16:20:40
+8002 RISHA          8002         59  0:18:07  0:11:28  0:17:31  0:51:01  1:38:07  1:39:52  2026-01-08 14:55:59  2026-01-08 16:35:51
+8003 PIKA           8003         53  0:06:50  0:37:54  0:12:01  0:08:51  1:05:36  1:04:40  2026-01-08 15:30:44  2026-01-08 16:35:24
+AINA                8004         45  0:11:03  0:17:04  0:10:05  0:11:20  0:49:32  0:49:36  2026-01-08 15:46:11  2026-01-08 16:35:47
+SPAY IVR Agent      230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-01-08 14:06:59  2026-01-08 14:06:59
+
+Friday    2026-01-09
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8001 - IVR          8001          1  0:00:00  0:00:06  0:00:00  0:00:00  0:00:06  0:00:00  2026-01-09 11:43:09  2026-01-09 11:43:09
+AINA                8004          1  0:00:00  0:01:11  0:00:00  0:00:00  0:01:11  0:00:00  2026-01-09 10:05:15  2026-01-09 10:05:15
+SPAY IVR Agent      230011        1  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  0:00:00  2026-01-09 17:54:52  2026-01-09 17:54:52
+
+Saturday  2026-01-10
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    

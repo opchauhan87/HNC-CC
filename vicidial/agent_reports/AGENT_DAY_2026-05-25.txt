@@ -1,0 +1,3 @@
+TODAY:     Monday        2026-05-25
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    

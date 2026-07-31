@@ -1,0 +1,31 @@
+
+Sunday    2026-01-25
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Monday    2026-01-26
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+8001 FAIRUS         8001          4  0:00:00  0:53:01  0:00:00  0:00:00  0:53:01  9:05:54  2026-01-26 09:20:16  2026-01-26 18:26:10
+8010 ARENA          8010          5  0:00:05  0:01:08  0:00:18  0:00:04  0:01:35  0:01:26  2026-01-26 11:28:02  2026-01-26 11:29:28
+ADRIANA             8004          1  0:00:00  8:51:24  0:00:00  0:00:00  8:51:24  0:00:00  2026-01-26 09:13:16  2026-01-26 09:13:16
+
+Tuesday   2026-01-27
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Wednesday 2026-01-28
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Thursday  2026-01-29
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Friday    2026-01-30
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
+
+Saturday  2026-01-31
+
+AGENT                USER     CALLS  TALK     PAUSE    WAIT     DISPO    ACTIVE   LOGTIME  FIRST                LAST                    
