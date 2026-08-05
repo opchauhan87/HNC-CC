@@ -3506,27 +3506,8 @@ if (($leadfile) && ($LF_path))
 			else 
 				{
 				print " <tr >\r\n";
-				print " <tr >\r\n";
-				                           // Custom display names array
-                           $custom_labels = array(
-                               'phone_number' => 'PHONE 1',
-			       'alt_phone' => 'PHONE 2',
-			       'province' => 'ORDER NO',	
-                               'first_name' => 'CUST NAME',
-                               'last_name' => 'CUST ID',
-                               'address1' => 'BAL-OS',
-                               'address2' => 'PRODUCT',
-                               'address3' => 'Address',
-                               'city' => 'JOMPAY',
-                               'state' => 'ASSIGN-AGE'
-                               
-                           );
-                           
-                           $display_text = isset($custom_labels[$rslt_field_name]) 
-                               ? $custom_labels[$rslt_field_name] 
-                               : strtoupper(preg_replace('/_/i', ' ', $rslt_field_name));
-                               
-                           print "   <td align=right><font class=standard>".$display_text.": </font></td>\r\n";				print "    <td align=left><div class='col-lg-5'><select class='form-control' name='".$rslt_field_name."_field'>\r\n";
+				print "   <td align=right><font class=standard>".strtoupper(preg_replace('/_/i', ' ', $rslt_field_name)).": </font></td>\r\n";
+				print "    <td align=left><div class='col-lg-5'><select class='form-control' name='".$rslt_field_name."_field'>\r\n";
 				print "     <option value='-1'>(none)</option>\r\n";
 
 				for ($j=0; $j<count($row); $j++) 
