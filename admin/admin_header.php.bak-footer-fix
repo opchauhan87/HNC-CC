@@ -2634,7 +2634,7 @@ Purpose:remove space above and below unline in submenu -->
 		<div class="col-xs-1"><i class="fa fa-users"></i></div>
                  <div class="col-xs-9"><span> <?php echo _QXZ("User Groups");?></span></div>
         </a>
-        <ul class="sub-menu"> 
+        <ul class="sub-menu" style="top:577px !important;"> 
 	<?php
 //	if (strlen($usergroups_hh) > 1)	{ 
 		?>
@@ -3386,3 +3386,5 @@ if($short_header==1){
 	echo "<div class='col-md-12'>";
 	}
 
+include('admin_footer.php');
+?>

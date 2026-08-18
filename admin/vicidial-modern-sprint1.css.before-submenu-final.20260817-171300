@@ -1,0 +1,5189 @@
+/* ============================================================
+   VICIdial Modern Theme - Sprint 1
+   Page Shell
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled {
+    background: #0a0e1a !important;
+    min-height: 100vh;
+}
+
+#cl-wrapper.vicidial-modern-enabled body {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    background: #0a0e1a;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .menu-space,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .content {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a {
+    color: rgba(255,255,255,0.65);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.05);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a {
+    color: #ffffff;
+    background: rgba(72,49,212,0.15);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a i {
+    color: rgba(255,255,255,0.45);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a i,
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover i {
+    color: #00c8ff;
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu {
+    background: rgba(255,255,255,0.02);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a {
+    color: rgba(255,255,255,0.55);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.04);
+}
+
+/* Main content */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    color: #ffffff;
+}
+
+/* Remove old bright borders/backgrounds */
+#cl-wrapper.vicidial-modern-enabled .border {
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Modern scrollbar */
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+}
+
+/* ============================================================
+   VICIdial Modern Theme - Sprint 1
+   Phase 1C.2 - LEFT SIDEBAR
+   ============================================================ */
+
+/* Sidebar */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    width: 260px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(72,49,212,0.12), transparent 35%),
+        #0a0e1a !important;
+    border-right: 1px solid rgba(255,255,255,0.07) !important;
+    box-shadow: 8px 0 30px rgba(0,0,0,0.25);
+    z-index: 1000;
+}
+
+/* Sidebar inner area */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .cl-navblock,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .menu-space,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .content {
+    background: transparent !important;
+}
+
+/* Existing logo area */
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo {
+    height: 76px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.015);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo .logo {
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo img {
+    max-width: 150px;
+    max-height: 44px;
+    object-fit: contain;
+}
+
+/* Navigation */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation {
+    padding: 12px 10px !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li {
+    margin: 3px 0 !important;
+}
+
+/* Main navigation links */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a {
+    min-height: 44px;
+    padding: 10px 13px !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.62) !important;
+    background: transparent !important;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Navigation icon */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a i {
+    width: 22px !important;
+    margin-right: 12px !important;
+    font-size: 15px !important;
+    text-align: center;
+    color: rgba(255,255,255,0.40) !important;
+}
+
+/* Navigation text */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a span {
+    color: inherit !important;
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a:hover {
+    background: rgba(255,255,255,0.055) !important;
+    color: #ffffff !important;
+    padding-left: 16px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a:hover i {
+    color: #00c8ff !important;
+}
+
+/* Active menu */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,0.28),
+        rgba(0,200,255,0.08)
+    ) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(72,49,212,0.20);
+    box-shadow: 0 5px 18px rgba(72,49,212,0.10);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Active indicator */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 22px;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(
+        180deg,
+        #4831d4,
+        #00c8ff
+    );
+}
+
+/* Sub menus */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu {
+    background: rgba(255,255,255,0.015) !important;
+    border-left: 1px solid rgba(255,255,255,0.07);
+    margin-left: 23px !important;
+    padding: 4px 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu li a {
+    color: rgba(255,255,255,0.50) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    padding: 7px 12px !important;
+    border-radius: 6px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.05) !important;
+}
+
+/* Section spacing */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation + .cl-vnavigation {
+    margin-top: 4px !important;
+}
+
+/* Prevent old Bootstrap column widths inside menu */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation .col-xs-1 {
+    width: 22px !important;
+    padding: 0 !important;
+    flex: 0 0 22px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation .col-xs-9 {
+    width: auto !important;
+    padding: 0 !important;
+    flex: 1;
+}
+
+/* Sidebar scrollbar */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.10);
+    border-radius: 10px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+/* Main area starts after sidebar */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    margin-left: 260px !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+        width: 260px !important;
+        transform: translateX(-100%);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar.open {
+        transform: translateX(0);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.3 - Modern VICIdial Brand
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand {
+    height: 76px !important;
+    width: 260px !important;
+    padding: 0 20px !important;
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-decoration: none;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4831d4, #00c8ff);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 6px 20px rgba(72,49,212,0.25);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text strong {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text small {
+    margin-top: 4px;
+    color: rgba(255,255,255,0.38);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link:hover {
+    text-decoration: none;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link:hover
+.modern-brand-icon {
+    box-shadow: 0 8px 25px rgba(0,200,255,0.22);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+
+/* ============================================================
+   Phase 1C.4 - User Profile / Status / Logout
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-panel {
+    width: 260px;
+    min-height: 76px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.015);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-avatar {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4831d4, #00c8ff);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(72,49,212,0.20);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-info {
+    min-width: 0;
+    flex: 1;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-name {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-role {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+    color: rgba(255,255,255,0.40);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #35e68a;
+    box-shadow: 0 0 8px rgba(53,230,138,0.65);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-logout {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-logout:hover {
+    color: #ff5c6c;
+    border-color: rgba(255,92,108,0.30);
+    background: rgba(255,92,108,0.08);
+    text-decoration: none;
+}
+
+/* Top header cleanup */
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    background: rgba(10,14,26,0.92) !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    box-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .header_time,
+#cl-wrapper.vicidial-modern-enabled .time_header {
+    color: rgba(255,255,255,0.45) !important;
+    font-size: 11px;
+}
+
+
+/* ============================================================
+   Phase 1C.5 - Navigation Sections
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-section {
+    padding: 14px 13px 5px;
+    margin: 0;
+    color: rgba(255,255,255,0.28);
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-section:first-child {
+    padding-top: 8px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-divider {
+    height: 1px;
+    margin: 8px 13px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* Keep old VICIdial lists visually unified */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation {
+    margin-bottom: 0 !important;
+}
+
+/* Cleaner submenu indentation */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    margin-top: 3px !important;
+}
+
+/* Remove old horizontal separators */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation hr {
+    border: 0 !important;
+    height: 1px;
+    background: rgba(255,255,255,0.05);
+    margin: 8px 12px !important;
+}
+
+/* Make section groups visually continuous */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a {
+    position: relative;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Icons / Active State / Submenu
+   ============================================================ */
+
+/* Main menu icon alignment */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a {
+    position: relative;
+    overflow: hidden;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a i {
+    width: 22px !important;
+    min-width: 22px !important;
+    margin-right: 11px !important;
+    font-size: 14px !important;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+/* Active left indicator */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 22px;
+    transform: translateY(-50%);
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(180deg,#4831d4,#00c8ff);
+}
+
+/* Active icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+    transform: scale(1.05);
+}
+
+/* Hover icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a:hover i {
+    color: #00c8ff !important;
+    transform: translateX(1px);
+}
+
+/* Parent menu arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    color: rgba(255,255,255,.30);
+    font-size: 11px;
+    transition: transform .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a::after,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active.open > a::after {
+    transform: rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    margin: 3px 0 5px 23px !important;
+    padding: 3px 0 3px 8px !important;
+    border-left: 1px solid rgba(255,255,255,.07);
+    background: transparent !important;
+}
+
+/* Submenu item */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    position: relative;
+    display: block;
+    min-height: 30px;
+    padding: 7px 10px !important;
+    border-radius: 6px;
+    color: rgba(255,255,255,.45) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    transition: all .18s ease;
+}
+
+/* Submenu bullet */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgba(255,255,255,.25);
+}
+
+/* Submenu hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    padding-left: 13px !important;
+    color: #fff !important;
+    background: rgba(255,255,255,.045) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover::before {
+    background: #00c8ff;
+}
+
+/* Current submenu item */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a {
+    color: #fff !important;
+    background: rgba(72,49,212,.13) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a::before {
+    background: #00c8ff;
+}
+
+/* Section title */
+#cl-wrapper.vicidial-modern-enabled
+.modern-nav-section {
+    user-select: none;
+}
+
+/* Badges */
+#cl-wrapper.vicidial-modern-enabled .modern-nav-badge {
+    float: right;
+    min-width: 20px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    background: rgba(0,200,255,.12);
+    color: #00c8ff;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* Smooth submenu appearance */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.submenus {
+    margin-left: 8px !important;
+    border-left-color: rgba(255,255,255,.05);
+}
+
+
+/* ============================================================
+   Phase 1C.6 - VICIdial Actual Menu Structure
+   ============================================================ */
+
+/* Parent items - VICIdial does not use .parent class */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) {
+    position: relative;
+}
+
+/* Arrow for menu items containing submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a {
+    padding-right: 34px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.28);
+    font-size: 11px;
+    transition: transform .2s ease, color .2s ease;
+}
+
+/* Open / active parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active:has(> ul.sub-menu) > a::after {
+    transform: translateY(-50%) rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Hover arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a:hover::after {
+    color: #00c8ff;
+}
+
+/* Active main menu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,.22),
+        rgba(0,200,255,.06)
+    ) !important;
+    color: #ffffff !important;
+}
+
+/* Active main menu icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Active indicator */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 22px;
+    transform: translateY(-50%);
+    border-radius: 0 4px 4px 0;
+    background: linear-gradient(
+        180deg,
+        #4831d4,
+        #00c8ff
+    );
+}
+
+/* Submenu visibility */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > ul.sub-menu {
+    overflow: hidden;
+    transition:
+        max-height .22s ease,
+        opacity .18s ease;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation ul.submenus {
+    margin-left: 8px !important;
+}
+
+/* Remove old VICIdial selected background attributes visually */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li[bgcolor] {
+    background: transparent !important;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - VICIdial Core.js Integration
+   ============================================================ */
+
+/* Parent menu generated dynamically by core.js */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a {
+    padding-right: 34px !important;
+}
+
+/* Parent arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.28);
+    font-size: 11px;
+    transition: transform .25s ease, color .2s ease;
+}
+
+/* Open parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a::after {
+    transform: translateY(-50%) rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Active parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,.22),
+        rgba(0,200,255,.06)
+    ) !important;
+    color: #ffffff !important;
+}
+
+/* Active parent icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Open parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a {
+    color: #ffffff !important;
+}
+
+/* Submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu {
+    margin-left: 23px !important;
+    padding: 4px 0 4px 8px !important;
+    border-left: 1px solid rgba(255,255,255,.07);
+    background: transparent !important;
+}
+
+/* Submenu links */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a {
+    min-height: 30px;
+    padding: 7px 10px !important;
+    border-radius: 6px;
+    color: rgba(255,255,255,.45) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    transition: all .18s ease;
+}
+
+/* Submenu bullet */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgba(255,255,255,.25);
+}
+
+/* Submenu hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a:hover {
+    padding-left: 14px !important;
+    color: #ffffff !important;
+    background: rgba(255,255,255,.05) !important;
+}
+
+/* Active submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li.active > a {
+    color: #ffffff !important;
+    background: rgba(72,49,212,.14) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li.active > a::before {
+    background: #00c8ff;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation ul.submenus {
+    margin-left: 8px !important;
+    border-left-color: rgba(255,255,255,.05);
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Submenu Readability Fix
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    color: #b8c1d1 !important;
+    background: transparent !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a span {
+    color: #b8c1d1 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(72,49,212,0.14) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a {
+    color: #ffffff !important;
+    background: rgba(72,49,212,0.20) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a::before {
+    background: #68758a;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover::before,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a::before {
+    background: #00c8ff;
+}
+
+
+/* ============================================================
+   FINAL SUBMENU TEXT OVERRIDE
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a,
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:link,
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:visited {
+    color: #b8c1d1 !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background-color: rgba(72,49,212,0.18) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a::before {
+    background: #68758a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:hover::before {
+    background: #00c8ff !important;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Smooth Navigation
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a i {
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    transition:
+        transform 0.30s ease,
+        color 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    padding-left: 13px !important;
+}
+
+/* Don't create extra CSS height animation.
+   VICIdial core.js controls submenu slideToggle(). */
+
+
+/* ============================================================
+   Phase 1C.7 - Modern Top Header
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    position: relative;
+    height: 76px !important;
+    min-height: 76px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13,18,31,0.98),
+            rgba(10,14,26,0.96)
+        ) !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.07) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Header container */
+#cl-wrapper.vicidial-modern-enabled #head-nav .container-fluid {
+    height: 76px !important;
+    padding: 0 20px !important;
+}
+
+/* Header right area */
+#cl-wrapper.vicidial-modern-enabled #head-nav .navbar-collapse {
+    height: 76px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* User area */
+#cl-wrapper.vicidial-modern-enabled #head-nav .user-nav {
+    height: 76px;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* User dropdown item */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Existing profile avatar */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > img {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0,200,255,0.35);
+}
+
+/* Username */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > span {
+    margin: 0 10px !important;
+    color: #dbe3ef !important;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+/* Profile menu trigger */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.04);
+    transition: all .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > .dropdown-toggle:hover {
+    background: rgba(255,255,255,0.09);
+}
+
+/* Existing nav menu icon */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .nav_menu {
+    width: 16px !important;
+    height: 16px !important;
+    opacity: .65;
+}
+
+/* Profile dropdown */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu {
+    min-width: 190px;
+    margin-top: 6px !important;
+    padding: 6px !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    border-radius: 10px !important;
+    background: #111827 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+/* Profile dropdown items */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a {
+    padding: 9px 11px !important;
+    border-radius: 7px;
+    color: #b8c1d1 !important;
+    background: transparent !important;
+    font-size: 11px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(72,49,212,.16) !important;
+}
+
+/* Logout */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer {
+    padding-left: 10px !important;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.06);
+    transition: all .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a i {
+    color: #8f9bad !important;
+    font-size: 15px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover {
+    background: rgba(255,80,100,.10);
+    border-color: rgba(255,80,100,.22);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover i {
+    color: #ff6878 !important;
+}
+
+/* Date/time */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .header_time {
+    width: auto !important;
+    margin: 0 12px 0 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .time_header {
+    color: #7f8ba0 !important;
+    font-size: 10px !important;
+    white-space: nowrap;
+}
+
+/* Call information */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu {
+    margin: 0 5px !important;
+    height: 76px;
+    display: flex !important;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a {
+    width: 38px;
+    height: 38px;
+    padding: 0 !important;
+    border-radius: 9px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.04) !important;
+    border: 1px solid rgba(255,255,255,.06);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a i {
+    color: #00c8ff !important;
+    font-size: 17px !important;
+}
+
+/* Call info hover */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a:hover {
+    background: rgba(0,200,255,.08) !important;
+    border-color: rgba(0,200,255,.18);
+}
+
+/* Call info dropdown */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu {
+    min-width: 230px;
+    margin-top: 8px !important;
+    padding: 12px 14px !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 10px !important;
+    background: #111827 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu p {
+    margin: 0 !important;
+    color: #aeb8c8 !important;
+    line-height: 1.8;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu strong {
+    color: #ffffff !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled #head-nav,
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .container-fluid,
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .navbar-collapse {
+        height: 64px !important;
+        min-height: 64px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .time_header {
+        display: none;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .profile_menu > span {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.7 FIX - Header / Sidebar Layout
+   ============================================================ */
+
+/* The old Bootstrap logo column is no longer needed.
+   Modern VICIdial brand lives inside the sidebar. */
+#cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-2 {
+    display: none !important;
+}
+
+/* Header must use full available content width */
+#cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-10 {
+    width: calc(100% - 260px) !important;
+    margin-left: 260px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Modern top header */
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+/* Header content alignment */
+#cl-wrapper.vicidial-modern-enabled #head-nav .navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+/* Keep header controls compact */
+#cl-wrapper.vicidial-modern-enabled #head-nav .header_time {
+    margin-right: 8px !important;
+}
+
+/* Sidebar always stays above header */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    z-index: 1100 !important;
+}
+
+/* User panel belongs to sidebar */
+#cl-wrapper.vicidial-modern-enabled .modern-user-panel {
+    width: 260px !important;
+    box-sizing: border-box;
+}
+
+/* Sidebar brand */
+#cl-wrapper.vicidial-modern-enabled .modern-brand {
+    width: 260px !important;
+    box-sizing: border-box;
+}
+
+/* Main content */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    margin-left: 260px !important;
+}
+
+/* Desktop only */
+@media (min-width: 993px) {
+    #cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-10 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.8 - Administration Context Bar
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-bar {
+    margin-left: 260px;
+    min-height: 68px;
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(17,24,39,.98),
+            rgba(13,18,31,.96)
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 5px 18px rgba(0,0,0,.12);
+
+    box-sizing: border-box;
+}
+
+/* Left */
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+    background: rgba(72,49,212,.14);
+    border: 1px solid rgba(72,49,212,.20);
+
+    color: #00c8ff;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-icon i {
+    font-size: 14px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-title .title {
+    color: #f1f5f9;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-title .subtitle {
+    margin-top: 2px;
+    color: #69778b;
+    font-size: 10px;
+    letter-spacing: .3px;
+}
+
+/* Right */
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #7f8da2;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-status .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34,197,94,.45);
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-user {
+    height: 34px;
+    padding: 0 11px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.06);
+
+    color: #9aa7b9;
+    font-size: 11px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-user i {
+    color: #00c8ff;
+    font-size: 11px;
+}
+
+/* Main content follows context bar */
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    margin-left: 260px !important;
+    width: calc(100% - 260px) !important;
+    box-sizing: border-box;
+}
+
+/* Existing page-head modernization */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head {
+    padding: 12px 16px !important;
+    margin: 10px 0 !important;
+
+    border-radius: 8px;
+    background: rgba(255,255,255,.025);
+    border: 1px solid rgba(255,255,255,.055);
+
+    color: #9eabba !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head a {
+    color: #9eabba !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    transition: color .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head a:hover {
+    color: #00c8ff !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled .vicidial-context-bar {
+        margin-left: 0;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-title .subtitle {
+        display: none;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-right {
+        gap: 8px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-status {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.9 - Modern Main Content / Tiles
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    padding: 16px 18px 40px !important;
+    background: transparent !important;
+}
+
+/* Existing VICIdial tile */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile {
+    position: relative;
+    margin-bottom: 14px !important;
+
+    border: 1px solid rgba(255,255,255,.06) !important;
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25,32,48,.96),
+            rgba(15,21,34,.96)
+        ) !important;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,.16) !important;
+
+    overflow: hidden;
+}
+
+/* Tile hover */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile:hover {
+    border-color: rgba(0,200,255,.14) !important;
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.22) !important;
+}
+
+/* Existing detail area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile.detail {
+    padding: 0 !important;
+}
+
+/* Page-head inside tile */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile .page-head {
+    margin: 0 !important;
+    padding: 13px 16px !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,.05) !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+}
+
+/* Page links */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head a {
+    display: inline-block;
+    margin-right: 5px;
+
+    color: #aeb9c9 !important;
+    font-size: 11px !important;
+    font-weight: 500;
+
+    text-decoration: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head a:hover {
+    color: #00c8ff !important;
+}
+
+/* Separators */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head {
+    color: rgba(255,255,255,.18) !important;
+}
+
+/* Content links */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 a {
+    transition:
+        color .2s ease,
+        background-color .2s ease;
+}
+
+/* Forms / tables inside main area */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 table {
+    border-color: rgba(255,255,255,.06) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 select,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 textarea {
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 6px !important;
+    background: rgba(255,255,255,.035) !important;
+    color: #dce4ef !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input:focus,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 select:focus,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 textarea:focus {
+    border-color: rgba(0,200,255,.35) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(0,200,255,.07) !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 button,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="button"] {
+    border-radius: 6px !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        padding: 12px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 .fd-tile {
+        margin-bottom: 10px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.10 - Tables / Forms / Admin Controls
+   ============================================================ */
+
+/* ---------- Tables ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table {
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+
+    color: #c8d1df !important;
+    background: rgba(15,21,34,.72) !important;
+    border: 1px solid rgba(255,255,255,.06) !important;
+    border-radius: 9px !important;
+    overflow: hidden;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table th {
+    padding: 10px 12px !important;
+
+    color: #8e9bad !important;
+    background: rgba(255,255,255,.035) !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.07) !important;
+
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: .45px;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table td {
+    padding: 9px 12px !important;
+
+    color: #c4cedc !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.045) !important;
+
+    font-size: 11px !important;
+    vertical-align: middle !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table tr:last-child td {
+    border-bottom: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table tbody tr {
+    transition: background-color .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table tbody tr:hover {
+    background: rgba(0,200,255,.035) !important;
+}
+
+/* Links inside tables */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 table td a {
+    color: #9faec0 !important;
+    text-decoration: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 table td a:hover {
+    color: #00c8ff !important;
+}
+
+/* ---------- Form labels ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 label {
+    color: #9da9ba !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+}
+
+/* ---------- Inputs ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="text"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="password"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="number"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="email"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="date"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="time"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 select,
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea {
+    min-height: 34px;
+
+    padding: 7px 10px !important;
+
+    color: #d9e2ed !important;
+    background: #111827 !important;
+
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 6px !important;
+
+    box-shadow: none !important;
+
+    font-size: 11px !important;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background-color .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea {
+    min-height: 80px;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input::placeholder,
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea::placeholder {
+    color: #596679 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input:focus,
+#cl-wrapper.vicidial-modern-enabled #pcont4 select:focus,
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea:focus {
+    background: #141d2d !important;
+    border-color: rgba(0,200,255,.38) !important;
+
+    box-shadow:
+        0 0 0 2px rgba(0,200,255,.07) !important;
+
+    outline: none !important;
+}
+
+/* Select dropdown */
+#cl-wrapper.vicidial-modern-enabled #pcont4 select option {
+    color: #d9e2ed;
+    background: #111827;
+}
+
+/* ---------- Checkboxes / Radio ---------- */
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="checkbox"],
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="radio"] {
+    accent-color: #00c8ff;
+    vertical-align: middle;
+}
+
+/* ---------- Buttons ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 button,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="button"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="reset"] {
+    min-height: 32px;
+
+    padding: 6px 13px !important;
+
+    color: #dce6f2 !important;
+    background: #202a3a !important;
+
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 6px !important;
+
+    font-size: 10px !important;
+    font-weight: 500 !important;
+
+    box-shadow: none !important;
+
+    transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        color .2s ease,
+        transform .15s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 button:hover,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="submit"]:hover,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="button"]:hover {
+    color: #ffffff !important;
+    background: #29364a !important;
+    border-color: rgba(0,200,255,.22) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 button:active,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="submit"]:active,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="button"]:active {
+    transform: translateY(1px);
+}
+
+/* ---------- Links styled as buttons ---------- */
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 a.btn,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .btn {
+    border-radius: 6px !important;
+    font-size: 10px !important;
+}
+
+/* ---------- Alerts / Messages ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .alert {
+    padding: 10px 13px !important;
+
+    color: #cbd5e1 !important;
+    background: rgba(255,255,255,.035) !important;
+
+    border: 1px solid rgba(255,255,255,.07) !important;
+    border-radius: 7px !important;
+
+    font-size: 11px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .alert-success {
+    background: rgba(34,197,94,.08) !important;
+    border-color: rgba(34,197,94,.18) !important;
+    color: #9ee6b2 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .alert-danger,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .alert-error {
+    background: rgba(239,68,68,.08) !important;
+    border-color: rgba(239,68,68,.18) !important;
+    color: #ffaaaa !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .alert-warning {
+    background: rgba(245,158,11,.08) !important;
+    border-color: rgba(245,158,11,.18) !important;
+    color: #f7c978 !important;
+}
+
+/* ---------- Pagination ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .pagination {
+    margin: 12px 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .pagination > li > a,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .pagination > li > span {
+    padding: 6px 9px !important;
+
+    color: #9ba8ba !important;
+    background: #151e2d !important;
+
+    border: 1px solid rgba(255,255,255,.06) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .pagination > li > a:hover {
+    color: #ffffff !important;
+    background: #202c40 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .pagination > .active > a {
+    color: #ffffff !important;
+    background: #4831d4 !important;
+    border-color: #4831d4 !important;
+}
+
+/* ---------- Horizontal rule ---------- */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 hr {
+    border: 0 !important;
+    border-top: 1px solid rgba(255,255,255,.06) !important;
+}
+
+/* ---------- Responsive tables ---------- */
+
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        overflow-x: hidden;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table {
+        font-size: 10px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table th,
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table td {
+        padding: 7px 8px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.11 - Sidebar Collapse / Responsive
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   DESKTOP - Expanded
+   ------------------------------------------------------------ */
+
+@media (min-width: 993px) {
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+        width: 260px !important;
+        left: 0 !important;
+        z-index: 1100 !important;
+        transition: width .30s ease, left .30s ease;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        margin-left: 260px !important;
+        width: calc(100% - 260px) !important;
+        transition: margin-left .30s ease, width .30s ease;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .vicidial-context-bar {
+        margin-left: 260px;
+        transition: margin-left .30s ease;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    > .col-md-12:first-of-type > .col-md-10 {
+        width: calc(100% - 260px) !important;
+        margin-left: 260px !important;
+        transition: margin-left .30s ease, width .30s ease;
+    }
+
+    /* --------------------------------------------------------
+       DESKTOP - Collapsed
+       -------------------------------------------------------- */
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed .cl-sidebar {
+        width: 72px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed #pcont4 {
+        margin-left: 72px !important;
+        width: calc(100% - 72px) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .vicidial-context-bar {
+        margin-left: 72px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    > .col-md-12:first-of-type > .col-md-10 {
+        width: calc(100% - 72px) !important;
+        margin-left: 72px !important;
+    }
+
+    /* Hide sidebar text */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation li a span,
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .modern-user-info,
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .modern-nav-section {
+        display: none !important;
+    }
+
+    /* Center icons */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li > a {
+        text-align: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li > a i {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Hide parent arrows when collapsed */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li.parent > a::after {
+        display: none !important;
+    }
+
+    /* User panel */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .modern-user-panel {
+        width: 72px !important;
+        justify-content: center;
+        padding: 10px 5px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .modern-user-avatar {
+        margin: 0;
+    }
+
+    /* Logo */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .sidebar-logo {
+        width: 72px !important;
+        overflow: hidden;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .sidebar-logo .logo img {
+        max-width: none;
+        margin-left: 7px;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   TABLET
+   ------------------------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+        width: 240px !important;
+        transform: translateX(-100%);
+        transition: transform .30s ease;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar.open {
+        transform: translateX(0);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        margin-left: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    > .col-md-12:first-of-type > .col-md-10 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+        width: 250px !important;
+        left: 0 !important;
+        transform: translateX(-100%);
+        transition: transform .30s ease;
+        z-index: 1200 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar.open {
+        transform: translateX(0);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        margin-left: 0 !important;
+        min-height: 58px;
+        padding: 0 12px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    > .col-md-12:first-of-type > .col-md-10 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .modern-user-panel {
+        width: 250px !important;
+    }
+
+    /* Prevent content overflow */
+    #cl-wrapper.vicidial-modern-enabled {
+        overflow-x: hidden;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   Sidebar collapse button
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .collapse-button {
+    background: rgba(255,255,255,.025) !important;
+    border-top: 1px solid rgba(255,255,255,.06) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .collapse-button button,
+#cl-wrapper.vicidial-modern-enabled
+#sidebar-collapse {
+    color: #8491a4 !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#sidebar-collapse:hover {
+    color: #00c8ff !important;
+}
+
+
+/* ------------------------------------------------------------
+   Overlay for mobile/tablet
+   ------------------------------------------------------------ */
+
+#vicidial-modern-overlay {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    #vicidial-modern-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1150;
+
+        background: rgba(0,0,0,.48);
+        backdrop-filter: blur(2px);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar.open ~ #vicidial-modern-overlay {
+        display: block;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.12 - Mobile Hamburger / Sidebar Overlay
+   ============================================================ */
+
+/* Mobile sidebar toggle */
+#cl-wrapper.vicidial-modern-enabled
+.cl-toggle {
+    position: fixed !important;
+    top: 14px;
+    left: 14px;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1300;
+
+    color: #dce5f0 !important;
+    background: rgba(17,24,39,.94) !important;
+
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 9px !important;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+
+    cursor: pointer;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-toggle:hover {
+    color: #00c8ff !important;
+    background: #182235 !important;
+    border-color: rgba(0,200,255,.22) !important;
+}
+
+/* Mobile hamburger icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-toggle i {
+    font-size: 17px !important;
+}
+
+
+/* ------------------------------------------------------------
+   Overlay
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+#vicidial-modern-overlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 1140;
+
+    background: rgba(0,0,0,.52);
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+
+/* ------------------------------------------------------------
+   Mobile
+   ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-toggle {
+        display: flex !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+        transition: transform .30s ease !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar.open {
+        transform: translateX(0) !important;
+    }
+
+    /* Keep context bar clear of hamburger */
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        padding-left: 65px !important;
+    }
+
+    /* Overlay */
+    #cl-wrapper.vicidial-modern-enabled
+    #vicidial-modern-overlay {
+        display: none;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar.open ~ #vicidial-modern-overlay {
+        display: block;
+    }
+
+    /* Sidebar content */
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar .cl-vnavigation {
+        padding-bottom: 25px;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   Tablet
+   ------------------------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-toggle {
+        display: flex !important;
+        position: fixed !important;
+        top: 13px;
+        left: 13px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        padding-left: 65px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.12 - Final Mobile Toggle Integration
+   ============================================================ */
+
+/* Mobile toggle button */
+#cl-wrapper.vicidial-modern-enabled
+.vicidial-mobile-toggle {
+    display: none;
+
+    position: fixed;
+    top: 12px;
+    left: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    z-index: 1300;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #dce5f0 !important;
+    background: rgba(17,24,39,.95) !important;
+
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 9px !important;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+
+    cursor: pointer;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.vicidial-mobile-toggle:hover {
+    color: #00c8ff !important;
+    border-color: rgba(0,200,255,.25) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.vicidial-mobile-toggle i {
+    font-size: 16px;
+}
+
+
+/* ------------------------------------------------------------
+   Mobile sidebar state
+   ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-mobile-toggle {
+        display: flex !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar {
+        width: 250px !important;
+        transform: translateX(-100%) !important;
+        transition: transform .30s ease !important;
+    }
+
+    /* Sidebar OPEN */
+    #cl-wrapper.vicidial-modern-enabled:not(.sb-collapsed)
+    .cl-sidebar {
+        transform: translateX(0) !important;
+    }
+
+    /* Sidebar CLOSED */
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+    }
+
+    /* Main content always full width */
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        margin-left: 0 !important;
+        padding-left: 62px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    > .col-md-12:first-of-type > .col-md-10 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* Overlay default */
+    #cl-wrapper.vicidial-modern-enabled
+    #vicidial-modern-overlay {
+        display: none !important;
+
+        position: fixed;
+        inset: 0;
+
+        z-index: 1140;
+
+        background: rgba(0,0,0,.52);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    /* Overlay when sidebar open */
+    #cl-wrapper.vicidial-modern-enabled:not(.sb-collapsed)
+    #vicidial-modern-overlay {
+        display: block !important;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   Tablet
+   ------------------------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-mobile-toggle {
+        display: flex !important;
+
+        position: fixed;
+        top: 12px;
+        left: 12px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar {
+        width: 240px !important;
+        transform: translateX(-100%) !important;
+        transition: transform .30s ease !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled:not(.sb-collapsed)
+    .cl-sidebar {
+        transform: translateX(0) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        margin-left: 0 !important;
+        padding-left: 62px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.12 - Existing Sidebar Button
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled
+#sidebar-collapse.vicidial-mobile-toggle {
+    display: none;
+
+    position: fixed !important;
+    top: 12px;
+    left: 12px;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    z-index: 1300;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #dce5f0 !important;
+    background: rgba(17,24,39,.96) !important;
+
+    border: 1px solid rgba(255,255,255,.09) !important;
+    border-radius: 9px !important;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,.25);
+
+    cursor: pointer;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#sidebar-collapse.vicidial-mobile-toggle:hover {
+    color: #00c8ff !important;
+    background: #182235 !important;
+    border-color: rgba(0,200,255,.25) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#sidebar-collapse.vicidial-mobile-toggle i {
+    font-size: 16px !important;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    #sidebar-collapse.vicidial-mobile-toggle {
+        display: flex !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        padding-left: 62px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+        transition: transform .30s ease !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled:not(.sb-collapsed)
+    .cl-sidebar {
+        transform: translateX(0) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    #sidebar-collapse.vicidial-mobile-toggle {
+        display: flex !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-bar {
+        padding-left: 62px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+        transition: transform .30s ease !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled:not(.sb-collapsed)
+    .cl-sidebar {
+        transform: translateX(0) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-sidebar {
+        transform: translateX(-100%) !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.14 - Admin Navigation UX
+   ============================================================ */
+
+/* Sidebar base */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    background: #0d1320 !important;
+    border-right: 1px solid rgba(255,255,255,.06) !important;
+}
+
+/* Navigation container */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation {
+    padding: 8px 8px 25px !important;
+}
+
+/* Section / menu headings */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation .head_title {
+    margin: 18px 8px 7px !important;
+    padding: 0 8px !important;
+
+    color: #59677b !important;
+    background: transparent !important;
+
+    font-size: 9px !important;
+    font-weight: 700 !important;
+    line-height: 20px !important;
+
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+}
+
+/* Main menu items */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li {
+    margin: 2px 0 !important;
+}
+
+/* Main menu links */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a {
+    position: relative;
+
+    min-height: 40px !important;
+    padding: 10px 12px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    color: #8d9aad !important;
+    background: transparent !important;
+
+    border-radius: 8px !important;
+
+    font-size: 11px !important;
+    font-weight: 500 !important;
+
+    text-decoration: none !important;
+
+    transition:
+        color .18s ease,
+        background-color .18s ease,
+        transform .18s ease;
+}
+
+/* Icons */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a i {
+    width: 22px !important;
+    margin-right: 9px !important;
+
+    color: #637187 !important;
+
+    font-size: 14px !important;
+    text-align: center !important;
+
+    transition: color .18s ease;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a:hover {
+    color: #e4ebf4 !important;
+    background: rgba(255,255,255,.045) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a:hover i {
+    color: #00c8ff !important;
+}
+
+/* Active item */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.selected > a {
+    color: #ffffff !important;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(72,49,212,.22),
+            rgba(72,49,212,.07)
+        ) !important;
+}
+
+/* Active indicator */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a::before,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.selected > a::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+
+    width: 3px;
+
+    border-radius: 0 4px 4px 0;
+
+    background: #00c8ff;
+}
+
+/* Active icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a i,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.selected > a i {
+    color: #00c8ff !important;
+}
+
+
+/* ------------------------------------------------------------
+   Parent menu
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a {
+    padding-right: 32px !important;
+}
+
+/* Parent arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    position: absolute;
+
+    right: 12px;
+
+    color: #566478;
+
+    font-family: FontAwesome;
+    font-size: 10px;
+
+    content: "\f105";
+
+    transition: transform .2s ease, color .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a::after {
+    color: #00c8ff;
+    transform: rotate(90deg);
+}
+
+
+/* ------------------------------------------------------------
+   Submenu
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    margin: 2px 0 5px 0 !important;
+    padding: 3px 0 3px 17px !important;
+
+    background: transparent !important;
+    border-left: 1px solid rgba(255,255,255,.055) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li {
+    margin: 1px 0 !important;
+}
+
+/* Submenu link */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    position: relative;
+
+    display: flex !important;
+    align-items: center !important;
+
+    min-height: 32px !important;
+
+    padding: 7px 9px !important;
+
+    color: #77869a !important;
+    background: transparent !important;
+
+    border-radius: 6px !important;
+
+    font-size: 10px !important;
+    font-weight: 500 !important;
+
+    text-decoration: none !important;
+
+    transition:
+        color .18s ease,
+        background-color .18s ease,
+        padding-left .18s ease;
+}
+
+/* Submenu hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    padding-left: 12px !important;
+
+    color: #dce5ef !important;
+    background: rgba(0,200,255,.045) !important;
+}
+
+/* Submenu active */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a {
+    color: #ffffff !important;
+    background: rgba(72,49,212,.13) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a::before {
+    content: "";
+
+    position: absolute;
+    left: -18px;
+
+    width: 3px;
+    height: 18px;
+
+    border-radius: 0 3px 3px 0;
+
+    background: #00c8ff;
+}
+
+
+/* ------------------------------------------------------------
+   Sidebar scrollbar
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .nscroller::-webkit-scrollbar {
+    width: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .nscroller::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .nscroller::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.08);
+    border-radius: 10px;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .nscroller::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,200,255,.22);
+}
+
+
+/* ------------------------------------------------------------
+   Collapsed desktop sidebar
+   ------------------------------------------------------------ */
+
+@media (min-width: 993px) {
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li > a {
+        justify-content: center !important;
+        padding: 10px 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li > a i {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li > a span {
+        display: none !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation > li.parent > a::after {
+        display: none !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled.sb-collapsed
+    .cl-vnavigation .head_title {
+        display: none !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.15 - Top Header / Command Bar
+   ============================================================ */
+
+/* Main sticky header */
+#cl-wrapper.vicidial-modern-enabled
+> .col-md-12:first-of-type {
+    background: #0b111d !important;
+    border-bottom: 1px solid rgba(255,255,255,.06) !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,.18) !important;
+}
+
+/* Header row */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav {
+    min-height: 64px !important;
+
+    background: #0b111d !important;
+    border: 0 !important;
+
+    box-shadow: none !important;
+}
+
+/* Header container */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .container-fluid {
+    min-height: 64px !important;
+}
+
+/* ------------------------------------------------------------
+   Modern brand
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand {
+    height: 64px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 12px !important;
+
+    background: #0b111d !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-link {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 10px;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    color: #00c8ff;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(72,49,212,.25),
+            rgba(0,200,255,.10)
+        );
+
+    border: 1px solid rgba(0,200,255,.10);
+
+    box-shadow: 0 5px 18px rgba(0,0,0,.18);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-icon i {
+    font-size: 16px;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-text {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.1;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-text strong {
+    color: #f1f5f9;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: .2px;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.modern-brand-text small {
+    margin-top: 4px;
+
+    color: #58677b;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------------------------------------
+   Header right side
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .navbar-collapse {
+    min-height: 64px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+
+/* Username */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > span {
+    display: inline-flex !important;
+    align-items: center !important;
+
+    margin-top: 0 !important;
+    margin-right: 8px !important;
+
+    color: #cbd5e1 !important;
+
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+
+/* Profile menu */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu {
+    display: flex !important;
+    align-items: center !important;
+
+    margin-right: 8px;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,.035) !important;
+    border: 1px solid rgba(255,255,255,.06);
+
+    transition: all .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > a:hover {
+    background: rgba(0,200,255,.07) !important;
+    border-color: rgba(0,200,255,.16);
+}
+
+
+/* Hide old avatar */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > img {
+    display: none !important;
+}
+
+
+/* Menu icon */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu img.nav_menu {
+    width: 15px !important;
+    height: 15px !important;
+
+    opacity: .65;
+
+    transition: opacity .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > a:hover img.nav_menu {
+    opacity: 1;
+}
+
+
+/* ------------------------------------------------------------
+   Profile dropdown
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu {
+    min-width: 190px !important;
+
+    margin-top: 9px !important;
+    padding: 6px !important;
+
+    background: #111a29 !important;
+
+    border: 1px solid rgba(255,255,255,.07) !important;
+    border-radius: 10px !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.38) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a {
+    display: block;
+
+    padding: 9px 11px !important;
+
+    color: #8f9caf !important;
+
+    border-radius: 7px;
+
+    font-size: 10px !important;
+
+    transition:
+        color .18s ease,
+        background-color .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(0,200,255,.06) !important;
+}
+
+
+/* ------------------------------------------------------------
+   Header time
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.header_time {
+    width: auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    margin-right: 8px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.time_header {
+    color: #69778a !important;
+
+    font-size: 9px !important;
+    font-weight: 500 !important;
+
+    white-space: nowrap;
+
+    letter-spacing: .2px;
+}
+
+
+/* ------------------------------------------------------------
+   Call Information
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu > a {
+    width: 36px;
+    height: 36px;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin-left: 7px;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,.035) !important;
+    border: 1px solid rgba(255,255,255,.06);
+
+    transition: all .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu > a:hover {
+    background: rgba(0,200,255,.07) !important;
+    border-color: rgba(0,200,255,.16);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu > a i {
+    color: #00c8ff !important;
+    font-size: 15px !important;
+}
+
+
+/* Version dropdown */
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu .dropdown-menu {
+    min-width: 220px;
+
+    background: #111a29 !important;
+
+    border: 1px solid rgba(255,255,255,.07) !important;
+    border-radius: 10px !important;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.4) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu .dropdown-menu p {
+    margin: 0 !important;
+    padding: 10px !important;
+
+    color: #8491a4 !important;
+
+    line-height: 1.8 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.notifications-menu .dropdown-menu strong {
+    color: #dbe4ef !important;
+}
+
+
+/* ------------------------------------------------------------
+   Logout
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer {
+    padding-left: 8px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a {
+    width: 36px;
+    height: 36px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,.035);
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    transition: all .18s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover {
+    background: rgba(255,70,90,.08);
+    border-color: rgba(255,70,90,.18);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a i {
+    color: #8491a4 !important;
+    font-size: 15px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover i {
+    color: #ff6b7a !important;
+}
+
+
+/* ------------------------------------------------------------
+   Mobile header
+   ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .modern-brand {
+        width: 100% !important;
+        height: 54px !important;
+
+        padding-left: 60px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav {
+        min-height: 54px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .container-fluid {
+        min-height: 54px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .time_header {
+        display: none !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .profile_menu > span {
+        display: none !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .notifications-menu {
+        display: none !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .modern-brand-text small {
+        display: none;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   Tablet
+   ------------------------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .modern-brand {
+        padding-left: 60px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .time_header {
+        display: none !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.17 - Admin Dashboard / Reports UX
+   ============================================================ */
+
+/* Dashboard page */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4.server-state {
+    padding-top: 12px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state > .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Main dashboard card */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .block-flat {
+    background: #101827 !important;
+    border: 1px solid rgba(255,255,255,.055) !important;
+    border-radius: 12px !important;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.18),
+        0 1px 0 rgba(255,255,255,.02) inset !important;
+
+    overflow: hidden;
+}
+
+/* Dashboard title */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .block-flat > .header {
+    min-height: 54px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 18px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(72,49,212,.10),
+            transparent
+        ) !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.055) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .block-flat > .header h3 {
+    margin: 0 !important;
+
+    color: #e8eef6 !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    letter-spacing: .15px !important;
+}
+
+/* Content area */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .block-flat > .content {
+    background: transparent !important;
+}
+
+/* Report section */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped {
+    margin-bottom: 14px !important;
+
+    padding: 0 !important;
+
+    background: #0d1522 !important;
+
+    border: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 9px !important;
+
+    overflow: hidden;
+}
+
+/* Section header */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .report_head,
+#cl-wrapper.vicidial-modern-enabled
+.server-state .well-white-header {
+    width: 100% !important;
+
+    min-height: 38px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 13px !important;
+
+    color: #dce5ef !important;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,200,255,.055),
+            rgba(72,49,212,.035)
+        ) !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.045) !important;
+
+    font-size: 10px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: .45px !important;
+    text-transform: uppercase !important;
+}
+
+/* Report links */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 {
+    min-height: 36px !important;
+
+    padding: 0 !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.025);
+}
+
+/* Last row cleanup */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6:last-child {
+    border-bottom: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a {
+    min-height: 36px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 7px 12px !important;
+
+    color: #8290a3 !important;
+
+    font-size: 10px !important;
+    font-weight: 500 !important;
+
+    text-decoration: none !important;
+
+    transition:
+        color .16s ease,
+        background-color .16s ease,
+        padding-left .16s ease;
+}
+
+/* Link arrow */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a::before {
+    content: "\f105";
+
+    margin-right: 8px;
+
+    color: #4d5b6d;
+
+    font-family: FontAwesome;
+    font-size: 9px;
+
+    transition: color .16s ease;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a:hover {
+    padding-left: 16px !important;
+
+    color: #ffffff !important;
+    background: rgba(0,200,255,.035) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a:hover::before {
+    color: #00c8ff;
+}
+
+/* Secondary links like v2 / Export / Detail */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 {
+    color: #6e7c90 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a + a {
+    display: inline-flex !important;
+
+    min-height: 0 !important;
+
+    padding: 0 4px !important;
+
+    color: #596a7e !important;
+
+    background: transparent !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a + a::before {
+    display: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a + a:hover {
+    padding-left: 4px !important;
+
+    color: #00c8ff !important;
+}
+
+
+/* ------------------------------------------------------------
+   Server summary table
+   ------------------------------------------------------------ */
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre {
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre table {
+    width: 100% !important;
+
+    background: #0d1522 !important;
+
+    border: 1px solid rgba(255,255,255,.055) !important;
+    border-radius: 9px !important;
+
+    overflow: hidden;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre table td {
+    padding: 8px 10px !important;
+
+    color: #8795a8 !important;
+
+    background: transparent !important;
+
+    border-color: rgba(255,255,255,.045) !important;
+
+    font-size: 10px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre table tr:first-child td {
+    color: #dce5ef !important;
+
+    background: rgba(255,255,255,.025) !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* ------------------------------------------------------------
+   Dashboard responsive
+   ------------------------------------------------------------ */
+
+@media (max-width: 767px) {
+
+    #cl-wrapper.vicidial-modern-enabled
+    .server-state {
+        padding: 8px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .server-state .block-flat {
+        border-radius: 9px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .server-state .table-striped > .col-md-6 {
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .server-state pre {
+        overflow-x: auto !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .server-state pre table {
+        min-width: 720px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.19 - Admin Utilities Modern Grid
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .Admin-utilities {
+    background: #0b1320 !important;
+    border: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 12px 35px rgba(0,0,0,.22) !important;
+    overflow: hidden;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-utilities > .header {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(72,49,212,.10),
+            rgba(0,200,255,.055)
+        ) !important;
+    border-bottom: 1px solid rgba(255,255,255,.05) !important;
+    padding: 16px 20px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-utilities > .header h3 {
+    color: #dce5ef !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: .35px !important;
+    margin: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px !important;
+
+    margin: 0 !important;
+    padding: 18px !important;
+
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    list-style: none !important;
+}
+
+/* Individual utility card */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li {
+    float: none !important;
+    width: auto !important;
+    min-height: 48px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: stretch !important;
+
+    background: #101a29 !important;
+    border: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 9px !important;
+
+    transition:
+        transform .18s ease,
+        border-color .18s ease,
+        background .18s ease,
+        box-shadow .18s ease !important;
+}
+
+/* Main link */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li > a {
+    flex: 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    min-height: 48px;
+
+    padding: 10px 13px !important;
+
+    color: #b9c6d8 !important;
+    background: transparent !important;
+
+    border: 0 !important;
+    border-radius: 9px !important;
+
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.35 !important;
+
+    text-decoration: none !important;
+}
+
+/* Small utility indicator */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li > a::before {
+    content: "›";
+
+    width: 22px;
+    height: 22px;
+
+    margin-right: 9px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 22px;
+
+    color: #00c8ff;
+
+    background: rgba(0,200,255,.08);
+    border: 1px solid rgba(0,200,255,.10);
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: all .18s ease;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li:hover {
+    background: #142135 !important;
+
+    border-color: rgba(0,200,255,.20) !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(0,0,0,.22),
+        0 0 18px rgba(0,200,255,.035) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li:hover > a {
+    color: #ffffff !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li:hover > a::before {
+    color: #ffffff;
+    background: rgba(0,200,255,.16);
+    border-color: rgba(0,200,255,.25);
+    transform: translateX(2px);
+}
+
+/* Multiple links inside same utility item */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li > a + a {
+    flex: 0 0 auto !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+
+    min-height: 48px;
+
+    padding: 10px 10px !important;
+
+    color: #7f91a8 !important;
+
+    font-size: 11px !important;
+    font-weight: 600 !important;
+
+    border-left: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li > a + a::before {
+    display: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li > a + a:hover {
+    color: #00c8ff !important;
+    background: rgba(0,200,255,.045) !important;
+}
+
+/* Remove old list styling */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white li {
+    list-style: none !important;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    #cl-wrapper.vicidial-modern-enabled .Admin-well-white {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    #cl-wrapper.vicidial-modern-enabled .Admin-well-white {
+        grid-template-columns: 1fr;
+        padding: 12px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .Admin-utilities > .header {
+        padding: 13px 15px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .Admin-utilities > .header h3 {
+        font-size: 12px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Maximum Stats Detail Report
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat {
+    background: #0b1320 !important;
+    border: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 14px 40px rgba(0,0,0,.22) !important;
+    overflow: hidden !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat > .col-md-12 > .content {
+    padding: 20px !important;
+}
+
+/* Report title */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat .content > b {
+    display: block !important;
+    padding: 14px 16px !important;
+    margin: -20px -20px 20px !important;
+
+    color: #e5edf7 !important;
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,.12),
+        rgba(0,200,255,.045)
+    ) !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.05) !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+/* Date / days control area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat form {
+    padding: 14px 16px !important;
+    margin-bottom: 18px !important;
+
+    background: rgba(255,255,255,.018) !important;
+    border: 1px solid rgba(255,255,255,.04) !important;
+    border-radius: 10px !important;
+}
+
+/* Days label */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat form .col-lg-1 {
+    color: #91a2b8 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 34px !important;
+}
+
+/* Days input */
+#cl-wrapper.vicidial-modern-enabled #pcont4 input#SUB {
+    height: 34px !important;
+    padding: 6px 10px !important;
+
+    color: #dce7f4 !important;
+    background: #111d2d !important;
+
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 7px !important;
+
+    box-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input#SUB:focus {
+    border-color: rgba(0,200,255,.45) !important;
+    box-shadow: 0 0 0 3px rgba(0,200,255,.07) !important;
+    outline: none !important;
+}
+
+/* Submit */
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[name="SUBMIT"] {
+    height: 34px !important;
+    padding: 6px 16px !important;
+
+    color: #ffffff !important;
+    background: linear-gradient(
+        135deg,
+        #4831d4,
+        #3655d8
+    ) !important;
+
+    border: 0 !important;
+    border-radius: 7px !important;
+
+    font-size: 11px !important;
+    font-weight: 700 !important;
+
+    box-shadow: 0 5px 16px rgba(72,49,212,.18) !important;
+    transition: all .18s ease !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[name="SUBMIT"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(72,49,212,.28) !important;
+}
+
+/* Statistics table */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+}
+
+/* Each chart row becomes a card */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list > tbody > tr {
+    display: block !important;
+
+    margin: 0 0 12px !important;
+
+    background: #101a29 !important;
+    border: 1px solid rgba(255,255,255,.045) !important;
+    border-radius: 10px !important;
+
+    overflow: hidden !important;
+
+    transition:
+        border-color .18s ease,
+        box-shadow .18s ease !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list > tbody > tr:hover {
+    border-color: rgba(0,200,255,.13) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.16) !important;
+}
+
+/* Chart cell */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list > tbody > tr > td {
+    display: block !important;
+
+    width: 100% !important;
+    padding: 14px !important;
+
+    color: #b9c7d8 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+}
+
+/* Chart content should remain responsive */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list img,
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list canvas,
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list svg {
+    max-width: 100% !important;
+}
+
+/* Keep chart text readable */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list td font {
+    color: #aebed0 !important;
+}
+
+/* Permission message */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .content {
+    color: #b8c5d5;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat > .col-md-12 > .content {
+        padding: 14px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat .content > b {
+        margin: -14px -14px 14px !important;
+        font-size: 12px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat form {
+        padding: 12px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table.table_list > tbody > tr > td {
+        padding: 8px !important;
+        overflow-x: auto !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Real-Time Report Readability / Contrast Fix
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    color: #d7e2ef !important;
+}
+
+/* Main report container */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat {
+    background: #101a29 !important;
+    color: #d7e2ef !important;
+}
+
+/* Report heading */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat .content > b,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head {
+    color: #e7f0fa !important;
+}
+
+/* Existing links */
+#cl-wrapper.vicidial-modern-enabled #pcont4 a {
+    color: #49b8ff !important;
+    text-decoration: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 a:hover {
+    color: #7dd3ff !important;
+}
+
+/* Quick report links area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .report-options,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .table-responsive {
+    color: #d7e2ef !important;
+}
+
+/* Generic table text */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table {
+    color: #d7e2ef !important;
+}
+
+/* Table cells were inheriting BLACK from old VICIdial CSS */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table td {
+    color: #d7e2ef !important;
+    background: #101a29 !important;
+}
+
+/* Table headings / labels */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table th {
+    color: #f0f5fb !important;
+    background: #162337 !important;
+    font-weight: 700 !important;
+}
+
+/* Strong/Bold values */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table b,
+#cl-wrapper.vicidial-modern-enabled #pcont4 table strong {
+    color: #f1f6fc !important;
+}
+
+/* Report labels such as:
+   DIAL LEVEL, CALLS TODAY, AVG AGENTS, etc. */
+#cl-wrapper.vicidial-modern-enabled #pcont4 td.text-center,
+#cl-wrapper.vicidial-modern-enabled #pcont4 td.text-left,
+#cl-wrapper.vicidial-modern-enabled #pcont4 td.text-right {
+    color: #dce7f3 !important;
+}
+
+/* Values */
+#cl-wrapper.vicidial-modern-enabled #pcont4 td {
+    font-size: 12px !important;
+}
+
+/* Quick action links */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 button {
+    color: #ffffff !important;
+}
+
+/* Existing Bootstrap buttons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-primary {
+    background: #245fa8 !important;
+    border-color: #3275c3 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-success {
+    background: #167c63 !important;
+    border-color: #20a37e !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-info {
+    background: #176d91 !important;
+    border-color: #218bb5 !important;
+}
+
+/* Refresh counter */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .refresh,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .refresh-count {
+    color: #8fa7bf !important;
+}
+
+/* Form labels */
+#cl-wrapper.vicidial-modern-enabled #pcont4 label,
+#cl-wrapper.vicidial-modern-enabled #pcont4 form {
+    color: #c8d5e4 !important;
+}
+
+/* Input controls */
+#cl-wrapper.vicidial-modern-enabled #pcont4 input,
+#cl-wrapper.vicidial-modern-enabled #pcont4 select,
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea {
+    color: #e4edf7 !important;
+    background: #162337 !important;
+    border-color: rgba(255,255,255,.10) !important;
+}
+
+/* Placeholder */
+#cl-wrapper.vicidial-modern-enabled #pcont4 input::placeholder {
+    color: #71859b !important;
+}
+
+/* HR */
+#cl-wrapper.vicidial-modern-enabled #pcont4 hr {
+    border-color: rgba(255,255,255,.08) !important;
+}
+
+/* Don't allow old VICIdial black font rules to win */
+#cl-wrapper.vicidial-modern-enabled #pcont4 font[color],
+#cl-wrapper.vicidial-modern-enabled #pcont4 font {
+    color: #d7e2ef !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table {
+        font-size: 11px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table td,
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table th {
+        padding: 7px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Soft Light VICIdial Report Theme
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    background: #f5f8fc !important;
+    color: #26384a !important;
+}
+
+/* Main report */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat {
+    background: #ffffff !important;
+    border: 1px solid #dce6f0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 18px rgba(31, 55, 80, 0.08) !important;
+    color: #26384a !important;
+}
+
+/* Report title */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat .content > b {
+    color: #214d73 !important;
+    background: #f7fafd !important;
+    border-bottom: 1px solid #e2eaf2 !important;
+}
+
+/* Links */
+#cl-wrapper.vicidial-modern-enabled #pcont4 a {
+    color: #28689a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 a:hover {
+    color: #164d78 !important;
+}
+
+/* Quick action area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .content > table:first-of-type {
+    background: #f8fbfe !important;
+    border: 1px solid #dce8f2 !important;
+    border-radius: 8px !important;
+}
+
+/* Main statistics table */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table {
+    color: #26384a !important;
+    background: #ffffff !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table td {
+    color: #293b4d !important;
+    background: #ffffff !important;
+    border-color: #dfe7ef !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 table th {
+    color: #ffffff !important;
+    background: #245579 !important;
+    border-color: #245579 !important;
+    font-weight: 600 !important;
+}
+
+/* Bold labels */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table b,
+#cl-wrapper.vicidial-modern-enabled #pcont4 table strong {
+    color: #174b70 !important;
+}
+
+/* Alternate table rows */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table tr:nth-child(even) td {
+    background: #f9fbfd !important;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled #pcont4 table tr:hover td {
+    background: #f1f7fc !important;
+}
+
+/* Inputs */
+#cl-wrapper.vicidial-modern-enabled #pcont4 input,
+#cl-wrapper.vicidial-modern-enabled #pcont4 select,
+#cl-wrapper.vicidial-modern-enabled #pcont4 textarea {
+    color: #26384a !important;
+    background: #ffffff !important;
+    border: 1px solid #cbd9e6 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 input:focus,
+#cl-wrapper.vicidial-modern-enabled #pcont4 select:focus {
+    border-color: #58a6d4 !important;
+    box-shadow: 0 0 0 3px rgba(63,145,195,.10) !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn,
+#cl-wrapper.vicidial-modern-enabled #pcont4 input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled #pcont4 button {
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 6px rgba(30,70,100,.10) !important;
+}
+
+/* Soft blue buttons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-primary {
+    background: #28618b !important;
+    border-color: #28618b !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-info {
+    background: #3985ae !important;
+    border-color: #3985ae !important;
+}
+
+/* Green action */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn-success {
+    background: #398f78 !important;
+    border-color: #398f78 !important;
+}
+
+/* Report cards / statistic boxes */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .report-box,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .stat-box {
+    background: #ffffff !important;
+    border: 1px solid #dce6ef !important;
+    color: #294257 !important;
+    box-shadow: 0 3px 12px rgba(30,60,90,.06) !important;
+}
+
+/* Horizontal chart containers */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .table_list > tbody > tr {
+    background: #ffffff !important;
+    border-color: #dce6ef !important;
+}
+
+/* Remove harsh dark backgrounds inherited from old theme */
+#cl-wrapper.vicidial-modern-enabled #pcont4 font {
+    color: #30465a !important;
+}
+
+/* Refresh text */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .refresh,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .refresh-count {
+    color: #61788c !important;
+}
+
+/* Soft separators */
+#cl-wrapper.vicidial-modern-enabled #pcont4 hr {
+    border-color: #e1e9f0 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        background: #f5f8fc !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 .block-flat {
+        border-radius: 8px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 table {
+        font-size: 11px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Soft Icon Refinement
+   ============================================================ */
+
+/* General report icons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.fa,
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.bi {
+    font-size: 14px !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 1 !important;
+    color: #477a9d !important;
+    text-shadow: none !important;
+}
+
+/* Quick action icons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .report-options i,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .quick-links i {
+    font-size: 13px !important;
+    margin-right: 5px !important;
+    color: #4c82a5 !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn i,
+#cl-wrapper.vicidial-modern-enabled #pcont4 button i {
+    font-size: 12px !important;
+    margin-right: 4px !important;
+}
+
+/* Don't allow icon boxes to become oversized */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .icon-box {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    font-size: 13px !important;
+    border-radius: 7px !important;
+}
+
+/* Main dashboard/report icons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fa {
+    transform: none !important;
+}
+
+/* Softer icon hover */
+#cl-wrapper.vicidial-modern-enabled #pcont4 a:hover i {
+    color: #286b97 !important;
+    transform: none !important;
+}
+
+/* Prevent giant inherited icon sizes */
+#cl-wrapper.vicidial-modern-enabled #pcont4 [class*="icon"] {
+    text-shadow: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #cl-wrapper.vicidial-modern-enabled #pcont4 i.fa,
+    #cl-wrapper.vicidial-modern-enabled #pcont4 i.bi {
+        font-size: 12px !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Visible KPI Icons
+   Keep VICIdial icons recognizable and visual
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.fa,
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.bi {
+    font-size: 22px !important;
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    display: inline-block !important;
+    color: #3979a5 !important;
+    text-shadow: none !important;
+    vertical-align: middle !important;
+}
+
+/* KPI / statistic icon area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .icon-box {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .icon-box i {
+    font-size: 24px !important;
+    width: auto !important;
+    height: auto !important;
+    line-height: 1 !important;
+}
+
+/* Quick-action icons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .report-options i,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .quick-links i {
+    font-size: 16px !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 6px !important;
+    color: #3979a5 !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .btn i,
+#cl-wrapper.vicidial-modern-enabled #pcont4 button i {
+    font-size: 14px !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 5px !important;
+}
+
+/* No giant scaling */
+#cl-wrapper.vicidial-modern-enabled #pcont4 i {
+    transform: none !important;
+    text-shadow: none !important;
+}
+
+
+/* ============================================================
+   Phase 1C.20 - SOFT LIGHT GREEN GLOBAL THEME
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled {
+    --modern-green: #4f9d69;
+    --modern-green-dark: #397b50;
+    --modern-green-soft: #eaf6ee;
+    --modern-green-pale: #f4faf6;
+    --modern-border: #d8e9dd;
+    --modern-text: #30463a;
+    --modern-muted: #6c8173;
+}
+
+/* Main content background */
+#cl-wrapper.vicidial-modern-enabled,
+#cl-wrapper.vicidial-modern-enabled #pcont,
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    background: #f3f8f5 !important;
+    color: var(--modern-text) !important;
+}
+
+/* Main panels */
+#cl-wrapper.vicidial-modern-enabled .block-flat,
+#cl-wrapper.vicidial-modern-enabled .cl-mcont {
+    background: #ffffff !important;
+    border-color: var(--modern-border) !important;
+    box-shadow: 0 3px 14px rgba(55,100,70,.07) !important;
+}
+
+/* Headings */
+#cl-wrapper.vicidial-modern-enabled h1,
+#cl-wrapper.vicidial-modern-enabled h2,
+#cl-wrapper.vicidial-modern-enabled h3,
+#cl-wrapper.vicidial-modern-enabled h4 {
+    color: #355944 !important;
+}
+
+/* Main report title */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .content > b {
+    color: #356548 !important;
+    background: #f5faf7 !important;
+    border-bottom-color: #dcece1 !important;
+}
+
+/* Links */
+#cl-wrapper.vicidial-modern-enabled a {
+    color: #43865a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled a:hover {
+    color: #2f7048 !important;
+}
+
+/* Tables */
+#cl-wrapper.vicidial-modern-enabled table {
+    background: #ffffff !important;
+    color: #30463a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled table td {
+    color: #344a3d !important;
+    background: #ffffff !important;
+    border-color: #dce9df !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled table th {
+    color: #ffffff !important;
+    background: #4f8f63 !important;
+    border-color: #4f8f63 !important;
+}
+
+/* Alternate rows */
+#cl-wrapper.vicidial-modern-enabled table tr:nth-child(even) td {
+    background: #f7fbf8 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled table tr:hover td {
+    background: #edf7f0 !important;
+}
+
+/* Bold labels */
+#cl-wrapper.vicidial-modern-enabled table b,
+#cl-wrapper.vicidial-modern-enabled table strong {
+    color: #356548 !important;
+}
+
+/* Form controls */
+#cl-wrapper.vicidial-modern-enabled input,
+#cl-wrapper.vicidial-modern-enabled select,
+#cl-wrapper.vicidial-modern-enabled textarea {
+    color: #30463a !important;
+    background: #ffffff !important;
+    border: 1px solid #cfe2d4 !important;
+    border-radius: 6px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled input:focus,
+#cl-wrapper.vicidial-modern-enabled select:focus,
+#cl-wrapper.vicidial-modern-enabled textarea:focus {
+    border-color: #70ad83 !important;
+    box-shadow: 0 0 0 3px rgba(79,157,105,.10) !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled .btn,
+#cl-wrapper.vicidial-modern-enabled input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled button {
+    border-radius: 6px !important;
+    box-shadow: 0 2px 6px rgba(50,100,65,.10) !important;
+}
+
+/* Primary */
+#cl-wrapper.vicidial-modern-enabled .btn-primary {
+    color: #ffffff !important;
+    background: #4f9d69 !important;
+    border-color: #4f9d69 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .btn-primary:hover {
+    background: #43895a !important;
+}
+
+/* Success */
+#cl-wrapper.vicidial-modern-enabled .btn-success {
+    color: #ffffff !important;
+    background: #5aa875 !important;
+    border-color: #5aa875 !important;
+}
+
+/* Info */
+#cl-wrapper.vicidial-modern-enabled .btn-info {
+    color: #ffffff !important;
+    background: #579b78 !important;
+    border-color: #579b78 !important;
+}
+
+/* Warning */
+#cl-wrapper.vicidial-modern-enabled .btn-warning {
+    color: #ffffff !important;
+    background: #b59a55 !important;
+    border-color: #b59a55 !important;
+}
+
+/* Quick action areas */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .report-options,
+#cl-wrapper.vicidial-modern-enabled #pcont4 .quick-links {
+    background: #f5faf7 !important;
+    border: 1px solid #d8e9dd !important;
+}
+
+/* Icons - visible but soft */
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.fa,
+#cl-wrapper.vicidial-modern-enabled #pcont4 i.bi {
+    color: #4d9364 !important;
+    text-shadow: none !important;
+}
+
+/* Main KPI icons */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .icon-box {
+    background: #e5f3e9 !important;
+    border: 1px solid #cde5d3 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .icon-box i {
+    color: #478c5e !important;
+}
+
+/* Server status */
+#cl-wrapper.vicidial-modern-enabled .server-state {
+    background: #f1f9f3 !important;
+    border-color: #d4e9d9 !important;
+    color: #3e684c !important;
+}
+
+/* Cards */
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li {
+    background: #f8fcf9 !important;
+    border-color: #d9e9dd !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .Admin-well-white > li:hover {
+    background: #edf7f0 !important;
+    border-color: #bcdac4 !important;
+}
+
+/* Utility section */
+#cl-wrapper.vicidial-modern-enabled .Admin-utilities {
+    background: #ffffff !important;
+    border-color: #d8e9dd !important;
+}
+
+/* Scrollbars */
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar-thumb {
+    background: #b9d5c0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar-thumb:hover {
+    background: #91bd9e !important;
+}
+
+/* Horizontal separators */
+#cl-wrapper.vicidial-modern-enabled hr {
+    border-color: #dceae0 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #cl-wrapper.vicidial-modern-enabled,
+    #cl-wrapper.vicidial-modern-enabled #pcont,
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        background: #f3f8f5 !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.20 v2 - SOFT GREEN REPORT UI
+   Exact VICIdial report selectors
+   ============================================================ */
+
+/* Report page */
+#cl-wrapper.vicidial-modern-enabled .server-state {
+    background: #f4f9f5 !important;
+    color: #30483a !important;
+}
+
+/* Main report block */
+#cl-wrapper.vicidial-modern-enabled .server-state .block-flat {
+    background: #ffffff !important;
+    border: 1px solid #d9e8dd !important;
+    border-radius: 12px !important;
+    box-shadow: 0 3px 12px rgba(50,90,65,.07) !important;
+}
+
+/* Main "Server Stats and Reports" header */
+#cl-wrapper.vicidial-modern-enabled .server-state .block-flat > .header {
+    background: #f0f8f2 !important;
+    border-bottom: 1px solid #d7e8dc !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* Header title */
+#cl-wrapper.vicidial-modern-enabled .server-state .block-flat > .header h3 {
+    color: #356548 !important;
+    font-weight: 600 !important;
+}
+
+/* Report category headers */
+#cl-wrapper.vicidial-modern-enabled .server-state .report_head,
+#cl-wrapper.vicidial-modern-enabled .server-state .well-white-header {
+    background: #eaf5ed !important;
+    color: #315f43 !important;
+    border: 1px solid #d6e7db !important;
+    border-radius: 8px !important;
+
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+/* Report category cards */
+#cl-wrapper.vicidial-modern-enabled .server-state .table-striped {
+    background: #ffffff !important;
+    border: 1px solid #dce9df !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+/* Report links */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a {
+    display: block !important;
+
+    color: #3d7050 !important;
+    background: #ffffff !important;
+
+    border-bottom: 1px solid #edf3ee !important;
+
+    padding: 9px 12px !important;
+
+    font-size: 12px !important;
+}
+
+/* Report link arrow */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a::before {
+    color: #72a47f !important;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a:hover {
+    color: #28643d !important;
+    background: #f1f8f3 !important;
+}
+
+/* Second link in each row */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a + a {
+    border-top: 0 !important;
+}
+
+/* Server summary */
+#cl-wrapper.vicidial-modern-enabled .server-state pre {
+    background: #ffffff !important;
+    color: #30483a !important;
+    border: 1px solid #dce9df !important;
+    border-radius: 8px !important;
+}
+
+/* Server summary table */
+#cl-wrapper.vicidial-modern-enabled .server-state pre table {
+    background: #ffffff !important;
+    color: #30483a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .server-state pre table td {
+    background: #ffffff !important;
+    color: #30483a !important;
+    border-color: #dce9df !important;
+}
+
+/* Existing old black text */
+#cl-wrapper.vicidial-modern-enabled .server-state font {
+    color: #30483a !important;
+}
+
+/* Soft section spacing */
+#cl-wrapper.vicidial-modern-enabled .server-state .content {
+    background: #f8fbf9 !important;
+}
+
+/* ============================================================
+   Global soft-green header/sidebar
+   ============================================================ */
+
+/* Top navigation */
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    background: #ffffff !important;
+    border-bottom: 1px solid #dce9df !important;
+    box-shadow: 0 2px 8px rgba(40,80,55,.06) !important;
+}
+
+/* Header text */
+#cl-wrapper.vicidial-modern-enabled .time_header,
+#cl-wrapper.vicidial-modern-enabled .header_time {
+    color: #557060 !important;
+}
+
+/* Sidebar */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    background: #f1f7f3 !important;
+    border-right: 1px solid #d8e7dc !important;
+}
+
+/* Management/category labels */
+#cl-wrapper.vicidial-modern-enabled .modern-nav-section {
+    color: #6d8877 !important;
+}
+
+/* Sidebar navigation */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a {
+    color: #405b4b !important;
+    background: transparent !important;
+}
+
+/* Sidebar icons */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a i {
+    color: #5b9270 !important;
+}
+
+/* Sidebar hover */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a:hover {
+    color: #2f7048 !important;
+    background: #e4f1e8 !important;
+}
+
+/* Active sidebar */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a {
+    color: #ffffff !important;
+    background: #5a9b6e !important;
+    border-radius: 7px !important;
+}
+
+/* Submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    background: #edf6f0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    color: #4a6855 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    color: #285f3d !important;
+    background: #e1f0e5 !important;
+}
+
+/* User panel */
+#cl-wrapper.vicidial-modern-enabled .modern-user-panel {
+    background: #ffffff !important;
+    border-bottom: 1px solid #dce9df !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-name {
+    color: #355744 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-role {
+    color: #708579 !important;
+}
+
+/* Logout */
+#cl-wrapper.vicidial-modern-enabled .modern-logout {
+    color: #4f8f63 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-logout:hover {
+    color: #2f7048 !important;
+}
+
+
+/* ============================================================
+   Phase 1C.20 - Top Header Gap Reduction
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .col-md-12[style*="position: sticky"] {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .col-md-12[style*="position: sticky"] + .col-md-12 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    margin-bottom: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    margin-top: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-navblock {
+    margin-top: 0 !important;
+}
+
+/* Administration header */
+#cl-wrapper.vicidial-modern-enabled .modern-admin-header {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* ============================================================
+   Phase 1C.20 - Reduce Content Gap Below Admin Header
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .cl-mcont {
+    padding-top: 18px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 > .cl-mcont {
+    padding-top: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .server-state {
+    margin-top: 0 !important;
+}
+
+/* ============================================================
+   Phase 1C.20 - Dashboard Alignment Fix
+   ============================================================ */
+
+/* Keep the dashboard inside one consistent content container */
+#cl-wrapper.vicidial-modern-enabled #pcont4.server-state {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Dashboard internal row */
+#cl-wrapper.vicidial-modern-enabled
+.server-state > .row {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Report/list section must use the full available width */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+}
+
+/* Do NOT let Bootstrap col-md-6 squeeze dashboard items */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Dashboard links should use the available row width */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Remove the old dark-panel appearance from individual report items */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped {
+    background: #ffffff !important;
+    border: 1px solid #d8e9dd !important;
+    border-radius: 10px !important;
+    box-shadow: 0 3px 14px rgba(55,100,70,.06) !important;
+}
+
+/* Section header - keep it clean and aligned */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .report_head,
+#cl-wrapper.vicidial-modern-enabled
+.server-state .well-white-header {
+    background: #e8f3eb !important;
+    color: #355944 !important;
+    border-bottom: 1px solid #d3e5d8 !important;
+}
+
+/* Dashboard report links */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a {
+    color: #355944 !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #edf3ee !important;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6 > a:hover {
+    padding-left: 16px !important;
+    color: #2f7048 !important;
+    background: #f3f9f5 !important;
+}
+
+/* Last item */
+#cl-wrapper.vicidial-modern-enabled
+.server-state .table-striped > .col-md-6:last-child > a {
+    border-bottom: 0 !important;
+}
+
+/* Server summary table stays full width */
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre,
+#cl-wrapper.vicidial-modern-enabled
+.server-state pre table {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* ============================================================
+   End Phase 1C.20 - Dashboard Alignment Fix
+   ============================================================ */
+
+
+/* ============================================================
+   Phase 1C.21 - Modern Native Sidebar Submenu
+   Keep Phase 1C.20 dashboard layout untouched
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li {
+    position: relative !important;
+}
+
+/* Native submenu: do not push sidebar items downward */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu {
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important;
+
+    display: none !important;
+
+    width: 220px !important;
+    min-width: 220px !important;
+
+    margin: 0 !important;
+    padding: 6px 0 !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #dce9df !important;
+    border-radius: 0 8px 8px 8px !important;
+
+    box-shadow: 0 6px 18px rgba(40,80,55,.15) !important;
+
+    z-index: 99999 !important;
+}
+
+/* Open first-level submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent:hover > ul.sub-menu {
+    display: block !important;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li.parent > ul.sub-menu li.parent > ul.sub-menu {
+    position: absolute !important;
+    top: 0 !important;
+    left: 100% !important;
+    display: none !important;
+}
+
+/* Open nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li.parent > ul.sub-menu li.parent:hover > ul.sub-menu {
+    display: block !important;
+}
+
+/* Submenu items */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li {
+    position: relative !important;
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+}
+
+/* Submenu links */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    padding: 10px 16px !important;
+
+    color: #4a6855 !important;
+    background: #ffffff !important;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+
+    white-space: nowrap !important;
+    text-decoration: none !important;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    color: #285f3d !important;
+    background: #e8f3eb !important;
+}
+
+/* Remove old submenu tail */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu::after {
+    display: none !important;
+}
+
+/* ============================================================
+   End Phase 1C.21
+   ============================================================ */

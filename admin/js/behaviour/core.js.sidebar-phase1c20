@@ -128,12 +128,6 @@ $(function(){
         var tool = $("<div id='sub-menu-nav' style='position:fixed;z-index:9999;'></div>");
         
         function showMenu(_this, e){
-          /* Modern VICIdial sidebar: use native CSS submenu on desktop */
-          if($("#cl-wrapper").hasClass("vicidial-modern-enabled") &&
-             $(window).width() >= 963){
-            return;
-          }
-
           if(($("#cl-wrapper").hasClass("sb-collapsed") || ($(window).width() > 755 && $(window).width() < 963)) && $("ul",_this).length > 0){   
             $(_this).removeClass("ocult");
             var menu = $("ul",_this);
@@ -195,77 +189,58 @@ $(function(){
 		  $(_this+ " > ul").show();*/
         }
 
-        /* Modern VICIdial theme uses native CSS submenus.
-           Do not activate the legacy cloned "tool" flyout. */
-        if (!$("#cl-wrapper").hasClass("vicidial-modern-enabled")) {
-          $(".cl-vnavigation li").hover(function(e){
-            showMenu(this, e);
-          },function(e){
-            tool.removeClass("over");
+        $(".cl-vnavigation li").hover(function(e){
+          showMenu(this, e);
+        },function(e){
+          tool.removeClass("over");
 
-            setTimeout(function(){
-              if(
-                !tool.hasClass("over") &&
-                !$(".cl-vnavigation li:hover").length &&
-                !tool.is(":hover")
-              ){
-                tool.hide();
-              }
-            },800);
-          });
-        }
-        
-        /* Modern theme: completely disable legacy submenu flyout handlers */
-        if (!$("#cl-wrapper").hasClass("vicidial-modern-enabled")) {
-
-          $(".top-menu li").hover(function(e){
-            showTopMenu(this, e);
-          },function(e){
-            tool.removeClass("over");
-
-            setTimeout(function(){
-              if(!tool.hasClass("over") && !$(".top-menu li:hover").length > 0){
-                tool.hide();
-              }
-            },500);
-          });
-
-          tool.hover(function(e){
-            $(this).addClass("over");
-          },function(){
-            $(this).removeClass("over");
-            tool.fadeOut("fast");
-          });
-
-          $(document).click(function(){
-            tool.hide();
-          });
-
-          $(document).on('touchstart click', function(e){
-            tool.fadeOut("fast");
-          });
-
-          tool.click(function(e){
-            e.stopPropagation();
-          });
-
-          $(".cl-vnavigation li").click(function(e){
+          setTimeout(function(){
             if(
-              (
-                (
-                  $("#cl-wrapper").hasClass("sb-collapsed") ||
-                  ($(window).width() > 755 && $(window).width() < 963)
-                ) &&
-                $("ul",this).length > 0
-              ) &&
-              !($(window).width() < 755)
+              !tool.hasClass("over") &&
+              !$(".cl-vnavigation li:hover").length &&
+              !tool.is(":hover")
             ){
-              showMenu(this, e);
-              e.stopPropagation();
+              tool.hide();
             }
-          });
-
-        }
+          },800);
+        });
+        
+        $(".top-menu li").hover(function(e){
+          showTopMenu(this, e);
+        },function(e){
+          tool.removeClass("over");
+          setTimeout(function(){
+            if(!tool.hasClass("over") && !$(".top-menu li:hover").length > 0){
+              tool.hide();
+            }
+          },500);
+        });
+        
+        tool.hover(function(e){
+          $(this).addClass("over");
+        },function(){
+          $(this).removeClass("over");
+          tool.fadeOut("fast");
+        });
+        
+        
+        $(document).click(function(){
+          tool.hide();
+        });
+        $(document).on('touchstart click', function(e){
+          tool.fadeOut("fast");
+        });
+        
+        tool.click(function(e){
+          e.stopPropagation();
+        });
+     
+        $(".cl-vnavigation li").click(function(e){
+          if((($("#cl-wrapper").hasClass("sb-collapsed") || ($(window).width() > 755 && $(window).width() < 963)) && $("ul",this).length > 0) && !($(window).width() < 755)){
+            showMenu(this, e);
+            e.stopPropagation();
+          }
+        });
         
         $(".cl-vnavigation li").on('touchstart click', function(){
           //~ alert($(window).width());

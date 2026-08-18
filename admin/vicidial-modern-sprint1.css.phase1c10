@@ -1,0 +1,1673 @@
+/* ============================================================
+   VICIdial Modern Theme - Sprint 1
+   Page Shell
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled {
+    background: #0a0e1a !important;
+    min-height: 100vh;
+}
+
+#cl-wrapper.vicidial-modern-enabled body {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    background: #0a0e1a;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .menu-space,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .content {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a {
+    color: rgba(255,255,255,0.65);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.05);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a {
+    color: #ffffff;
+    background: rgba(72,49,212,0.15);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a i {
+    color: rgba(255,255,255,0.45);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a i,
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover i {
+    color: #00c8ff;
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu {
+    background: rgba(255,255,255,0.02);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a {
+    color: rgba(255,255,255,0.55);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.04);
+}
+
+/* Main content */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    color: #ffffff;
+}
+
+/* Remove old bright borders/backgrounds */
+#cl-wrapper.vicidial-modern-enabled .border {
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Modern scrollbar */
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+}
+
+/* ============================================================
+   VICIdial Modern Theme - Sprint 1
+   Phase 1C.2 - LEFT SIDEBAR
+   ============================================================ */
+
+/* Sidebar */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    width: 260px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(72,49,212,0.12), transparent 35%),
+        #0a0e1a !important;
+    border-right: 1px solid rgba(255,255,255,0.07) !important;
+    box-shadow: 8px 0 30px rgba(0,0,0,0.25);
+    z-index: 1000;
+}
+
+/* Sidebar inner area */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .cl-navblock,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .menu-space,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .content {
+    background: transparent !important;
+}
+
+/* Existing logo area */
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo {
+    height: 76px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.015);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo .logo {
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled .sidebar-logo img {
+    max-width: 150px;
+    max-height: 44px;
+    object-fit: contain;
+}
+
+/* Navigation */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation {
+    padding: 12px 10px !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li {
+    margin: 3px 0 !important;
+}
+
+/* Main navigation links */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a {
+    min-height: 44px;
+    padding: 10px 13px !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.62) !important;
+    background: transparent !important;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Navigation icon */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a i {
+    width: 22px !important;
+    margin-right: 12px !important;
+    font-size: 15px !important;
+    text-align: center;
+    color: rgba(255,255,255,0.40) !important;
+}
+
+/* Navigation text */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a span {
+    color: inherit !important;
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+/* Hover */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a:hover {
+    background: rgba(255,255,255,0.055) !important;
+    color: #ffffff !important;
+    padding-left: 16px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a:hover i {
+    color: #00c8ff !important;
+}
+
+/* Active menu */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,0.28),
+        rgba(0,200,255,0.08)
+    ) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(72,49,212,0.20);
+    box-shadow: 0 5px 18px rgba(72,49,212,0.10);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Active indicator */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li.active > a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 22px;
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(
+        180deg,
+        #4831d4,
+        #00c8ff
+    );
+}
+
+/* Sub menus */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu {
+    background: rgba(255,255,255,0.015) !important;
+    border-left: 1px solid rgba(255,255,255,0.07);
+    margin-left: 23px !important;
+    padding: 4px 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu li a {
+    color: rgba(255,255,255,0.50) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    padding: 7px 12px !important;
+    border-radius: 6px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.05) !important;
+}
+
+/* Section spacing */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation + .cl-vnavigation {
+    margin-top: 4px !important;
+}
+
+/* Prevent old Bootstrap column widths inside menu */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation .col-xs-1 {
+    width: 22px !important;
+    padding: 0 !important;
+    flex: 0 0 22px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation .col-xs-9 {
+    width: auto !important;
+    padding: 0 !important;
+    flex: 1;
+}
+
+/* Sidebar scrollbar */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.10);
+    border-radius: 10px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+/* Main area starts after sidebar */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    margin-left: 260px !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+        width: 260px !important;
+        transform: translateX(-100%);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled .cl-sidebar.open {
+        transform: translateX(0);
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.3 - Modern VICIdial Brand
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand {
+    height: 76px !important;
+    width: 260px !important;
+    padding: 0 20px !important;
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-decoration: none;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4831d4, #00c8ff);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 6px 20px rgba(72,49,212,0.25);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text strong {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-text small {
+    margin-top: 4px;
+    color: rgba(255,255,255,0.38);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link:hover {
+    text-decoration: none;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-brand-link:hover
+.modern-brand-icon {
+    box-shadow: 0 8px 25px rgba(0,200,255,0.22);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+
+/* ============================================================
+   Phase 1C.4 - User Profile / Status / Logout
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-panel {
+    width: 260px;
+    min-height: 76px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    background: rgba(255,255,255,0.015);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-avatar {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4831d4, #00c8ff);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(72,49,212,0.20);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-info {
+    min-width: 0;
+    flex: 1;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-name {
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-user-role {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+    color: rgba(255,255,255,0.40);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #35e68a;
+    box-shadow: 0 0 8px rgba(53,230,138,0.65);
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-logout {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-logout:hover {
+    color: #ff5c6c;
+    border-color: rgba(255,92,108,0.30);
+    background: rgba(255,92,108,0.08);
+    text-decoration: none;
+}
+
+/* Top header cleanup */
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    background: rgba(10,14,26,0.92) !important;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    box-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled .header_time,
+#cl-wrapper.vicidial-modern-enabled .time_header {
+    color: rgba(255,255,255,0.45) !important;
+    font-size: 11px;
+}
+
+
+/* ============================================================
+   Phase 1C.5 - Navigation Sections
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-section {
+    padding: 14px 13px 5px;
+    margin: 0;
+    color: rgba(255,255,255,0.28);
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-section:first-child {
+    padding-top: 8px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .modern-nav-divider {
+    height: 1px;
+    margin: 8px 13px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* Keep old VICIdial lists visually unified */
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation {
+    margin-bottom: 0 !important;
+}
+
+/* Cleaner submenu indentation */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    margin-top: 3px !important;
+}
+
+/* Remove old horizontal separators */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation hr {
+    border: 0 !important;
+    height: 1px;
+    background: rgba(255,255,255,0.05);
+    margin: 8px 12px !important;
+}
+
+/* Make section groups visually continuous */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a {
+    position: relative;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Icons / Active State / Submenu
+   ============================================================ */
+
+/* Main menu icon alignment */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a {
+    position: relative;
+    overflow: hidden;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a i {
+    width: 22px !important;
+    min-width: 22px !important;
+    margin-right: 11px !important;
+    font-size: 14px !important;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+/* Active left indicator */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 22px;
+    transform: translateY(-50%);
+    border-radius: 0 5px 5px 0;
+    background: linear-gradient(180deg,#4831d4,#00c8ff);
+}
+
+/* Active icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+    transform: scale(1.05);
+}
+
+/* Hover icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a:hover i {
+    color: #00c8ff !important;
+    transform: translateX(1px);
+}
+
+/* Parent menu arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    color: rgba(255,255,255,.30);
+    font-size: 11px;
+    transition: transform .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a::after,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active.open > a::after {
+    transform: rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    margin: 3px 0 5px 23px !important;
+    padding: 3px 0 3px 8px !important;
+    border-left: 1px solid rgba(255,255,255,.07);
+    background: transparent !important;
+}
+
+/* Submenu item */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    position: relative;
+    display: block;
+    min-height: 30px;
+    padding: 7px 10px !important;
+    border-radius: 6px;
+    color: rgba(255,255,255,.45) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    transition: all .18s ease;
+}
+
+/* Submenu bullet */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgba(255,255,255,.25);
+}
+
+/* Submenu hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    padding-left: 13px !important;
+    color: #fff !important;
+    background: rgba(255,255,255,.045) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover::before {
+    background: #00c8ff;
+}
+
+/* Current submenu item */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a {
+    color: #fff !important;
+    background: rgba(72,49,212,.13) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a::before {
+    background: #00c8ff;
+}
+
+/* Section title */
+#cl-wrapper.vicidial-modern-enabled
+.modern-nav-section {
+    user-select: none;
+}
+
+/* Badges */
+#cl-wrapper.vicidial-modern-enabled .modern-nav-badge {
+    float: right;
+    min-width: 20px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    background: rgba(0,200,255,.12);
+    color: #00c8ff;
+    font-size: 9px;
+    text-align: center;
+}
+
+/* Smooth submenu appearance */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu {
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.submenus {
+    margin-left: 8px !important;
+    border-left-color: rgba(255,255,255,.05);
+}
+
+
+/* ============================================================
+   Phase 1C.6 - VICIdial Actual Menu Structure
+   ============================================================ */
+
+/* Parent items - VICIdial does not use .parent class */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) {
+    position: relative;
+}
+
+/* Arrow for menu items containing submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a {
+    padding-right: 34px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.28);
+    font-size: 11px;
+    transition: transform .2s ease, color .2s ease;
+}
+
+/* Open / active parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active:has(> ul.sub-menu) > a::after {
+    transform: translateY(-50%) rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Hover arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li:has(> ul.sub-menu) > a:hover::after {
+    color: #00c8ff;
+}
+
+/* Active main menu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,.22),
+        rgba(0,200,255,.06)
+    ) !important;
+    color: #ffffff !important;
+}
+
+/* Active main menu icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Active indicator */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.active > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 3px;
+    height: 22px;
+    transform: translateY(-50%);
+    border-radius: 0 4px 4px 0;
+    background: linear-gradient(
+        180deg,
+        #4831d4,
+        #00c8ff
+    );
+}
+
+/* Submenu visibility */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > ul.sub-menu {
+    overflow: hidden;
+    transition:
+        max-height .22s ease,
+        opacity .18s ease;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation ul.submenus {
+    margin-left: 8px !important;
+}
+
+/* Remove old VICIdial selected background attributes visually */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li[bgcolor] {
+    background: transparent !important;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - VICIdial Core.js Integration
+   ============================================================ */
+
+/* Parent menu generated dynamically by core.js */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a {
+    padding-right: 34px !important;
+}
+
+/* Parent arrow */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,.28);
+    font-size: 11px;
+    transition: transform .25s ease, color .2s ease;
+}
+
+/* Open parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a::after {
+    transform: translateY(-50%) rotate(180deg);
+    color: #00c8ff;
+}
+
+/* Active parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.active > a {
+    background: linear-gradient(
+        90deg,
+        rgba(72,49,212,.22),
+        rgba(0,200,255,.06)
+    ) !important;
+    color: #ffffff !important;
+}
+
+/* Active parent icon */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.active > a i {
+    color: #00c8ff !important;
+}
+
+/* Open parent */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent.open > a {
+    color: #ffffff !important;
+}
+
+/* Submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu {
+    margin-left: 23px !important;
+    padding: 4px 0 4px 8px !important;
+    border-left: 1px solid rgba(255,255,255,.07);
+    background: transparent !important;
+}
+
+/* Submenu links */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a {
+    min-height: 30px;
+    padding: 7px 10px !important;
+    border-radius: 6px;
+    color: rgba(255,255,255,.45) !important;
+    background: transparent !important;
+    font-size: 11px !important;
+    transition: all .18s ease;
+}
+
+/* Submenu bullet */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: rgba(255,255,255,.25);
+}
+
+/* Submenu hover */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li > a:hover {
+    padding-left: 14px !important;
+    color: #ffffff !important;
+    background: rgba(255,255,255,.05) !important;
+}
+
+/* Active submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li.active > a {
+    color: #ffffff !important;
+    background: rgba(72,49,212,.14) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > ul.sub-menu > li.active > a::before {
+    background: #00c8ff;
+}
+
+/* Nested submenu */
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation ul.submenus {
+    margin-left: 8px !important;
+    border-left-color: rgba(255,255,255,.05);
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Submenu Readability Fix
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    color: #b8c1d1 !important;
+    background: transparent !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a span {
+    color: #b8c1d1 !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(72,49,212,0.14) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a {
+    color: #ffffff !important;
+    background: rgba(72,49,212,0.20) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a::before {
+    background: #68758a;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover::before,
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li.active > a::before {
+    background: #00c8ff;
+}
+
+
+/* ============================================================
+   FINAL SUBMENU TEXT OVERRIDE
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a,
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:link,
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:visited {
+    color: #b8c1d1 !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:hover {
+    color: #ffffff !important;
+    background-color: rgba(72,49,212,0.18) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a::before {
+    background: #68758a !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-sidebar .cl-vnavigation li ul.sub-menu li a:hover::before {
+    background: #00c8ff !important;
+}
+
+
+/* ============================================================
+   Phase 1C.6 - Smooth Navigation
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation > li > a {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li > a i {
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation > li.parent > a::after {
+    transition:
+        transform 0.30s ease,
+        color 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        padding-left 0.25s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+.cl-vnavigation li ul.sub-menu li a:hover {
+    padding-left: 13px !important;
+}
+
+/* Don't create extra CSS height animation.
+   VICIdial core.js controls submenu slideToggle(). */
+
+
+/* ============================================================
+   Phase 1C.7 - Modern Top Header
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    position: relative;
+    height: 76px !important;
+    min-height: 76px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13,18,31,0.98),
+            rgba(10,14,26,0.96)
+        ) !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.07) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Header container */
+#cl-wrapper.vicidial-modern-enabled #head-nav .container-fluid {
+    height: 76px !important;
+    padding: 0 20px !important;
+}
+
+/* Header right area */
+#cl-wrapper.vicidial-modern-enabled #head-nav .navbar-collapse {
+    height: 76px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* User area */
+#cl-wrapper.vicidial-modern-enabled #head-nav .user-nav {
+    height: 76px;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* User dropdown item */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Existing profile avatar */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > img {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0,200,255,0.35);
+}
+
+/* Username */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > span {
+    margin: 0 10px !important;
+    color: #dbe3ef !important;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+/* Profile menu trigger */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.04);
+    transition: all .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu > .dropdown-toggle:hover {
+    background: rgba(255,255,255,0.09);
+}
+
+/* Existing nav menu icon */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .nav_menu {
+    width: 16px !important;
+    height: 16px !important;
+    opacity: .65;
+}
+
+/* Profile dropdown */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu {
+    min-width: 190px;
+    margin-top: 6px !important;
+    padding: 6px !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    border-radius: 10px !important;
+    background: #111827 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+/* Profile dropdown items */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a {
+    padding: 9px 11px !important;
+    border-radius: 7px;
+    color: #b8c1d1 !important;
+    background: transparent !important;
+    font-size: 11px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .profile_menu .dropdown-menu li a:hover {
+    color: #ffffff !important;
+    background: rgba(72,49,212,.16) !important;
+}
+
+/* Logout */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer {
+    padding-left: 10px !important;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.06);
+    transition: all .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a i {
+    color: #8f9bad !important;
+    font-size: 15px !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover {
+    background: rgba(255,80,100,.10);
+    border-color: rgba(255,80,100,.22);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .spacer a:hover i {
+    color: #ff6878 !important;
+}
+
+/* Date/time */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .header_time {
+    width: auto !important;
+    margin: 0 12px 0 0 !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .time_header {
+    color: #7f8ba0 !important;
+    font-size: 10px !important;
+    white-space: nowrap;
+}
+
+/* Call information */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu {
+    margin: 0 5px !important;
+    height: 76px;
+    display: flex !important;
+    align-items: center;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a {
+    width: 38px;
+    height: 38px;
+    padding: 0 !important;
+    border-radius: 9px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.04) !important;
+    border: 1px solid rgba(255,255,255,.06);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a i {
+    color: #00c8ff !important;
+    font-size: 17px !important;
+}
+
+/* Call info hover */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu > a:hover {
+    background: rgba(0,200,255,.08) !important;
+    border-color: rgba(0,200,255,.18);
+}
+
+/* Call info dropdown */
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu {
+    min-width: 230px;
+    margin-top: 8px !important;
+    padding: 12px 14px !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 10px !important;
+    background: #111827 !important;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu p {
+    margin: 0 !important;
+    color: #aeb8c8 !important;
+    line-height: 1.8;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#head-nav .notifications-menu .dropdown-menu strong {
+    color: #ffffff !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled #head-nav,
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .container-fluid,
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .navbar-collapse {
+        height: 64px !important;
+        min-height: 64px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .time_header {
+        display: none;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #head-nav .profile_menu > span {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.7 FIX - Header / Sidebar Layout
+   ============================================================ */
+
+/* The old Bootstrap logo column is no longer needed.
+   Modern VICIdial brand lives inside the sidebar. */
+#cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-2 {
+    display: none !important;
+}
+
+/* Header must use full available content width */
+#cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-10 {
+    width: calc(100% - 260px) !important;
+    margin-left: 260px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Modern top header */
+#cl-wrapper.vicidial-modern-enabled #head-nav {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+/* Header content alignment */
+#cl-wrapper.vicidial-modern-enabled #head-nav .navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+/* Keep header controls compact */
+#cl-wrapper.vicidial-modern-enabled #head-nav .header_time {
+    margin-right: 8px !important;
+}
+
+/* Sidebar always stays above header */
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    z-index: 1100 !important;
+}
+
+/* User panel belongs to sidebar */
+#cl-wrapper.vicidial-modern-enabled .modern-user-panel {
+    width: 260px !important;
+    box-sizing: border-box;
+}
+
+/* Sidebar brand */
+#cl-wrapper.vicidial-modern-enabled .modern-brand {
+    width: 260px !important;
+    box-sizing: border-box;
+}
+
+/* Main content */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    margin-left: 260px !important;
+}
+
+/* Desktop only */
+@media (min-width: 993px) {
+    #cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled > .col-md-12:first-of-type > .col-md-10 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont {
+        margin-left: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.8 - Administration Context Bar
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-bar {
+    margin-left: 260px;
+    min-height: 68px;
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(17,24,39,.98),
+            rgba(13,18,31,.96)
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    box-shadow: 0 5px 18px rgba(0,0,0,.12);
+
+    box-sizing: border-box;
+}
+
+/* Left */
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+    background: rgba(72,49,212,.14);
+    border: 1px solid rgba(72,49,212,.20);
+
+    color: #00c8ff;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-icon i {
+    font-size: 14px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-title .title {
+    color: #f1f5f9;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-title .subtitle {
+    margin-top: 2px;
+    color: #69778b;
+    font-size: 10px;
+    letter-spacing: .3px;
+}
+
+/* Right */
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #7f8da2;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-status .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34,197,94,.45);
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-user {
+    height: 34px;
+    padding: 0 11px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.06);
+
+    color: #9aa7b9;
+    font-size: 11px;
+}
+
+#cl-wrapper.vicidial-modern-enabled .vicidial-context-user i {
+    color: #00c8ff;
+    font-size: 11px;
+}
+
+/* Main content follows context bar */
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    margin-left: 260px !important;
+    width: calc(100% - 260px) !important;
+    box-sizing: border-box;
+}
+
+/* Existing page-head modernization */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head {
+    padding: 12px 16px !important;
+    margin: 10px 0 !important;
+
+    border-radius: 8px;
+    background: rgba(255,255,255,.025);
+    border: 1px solid rgba(255,255,255,.055);
+
+    color: #9eabba !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head a {
+    color: #9eabba !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    transition: color .2s ease;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 .page-head a:hover {
+    color: #00c8ff !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled .vicidial-context-bar {
+        margin-left: 0;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-title .subtitle {
+        display: none;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-right {
+        gap: 8px;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    .vicidial-context-status {
+        display: none;
+    }
+}
+
+
+/* ============================================================
+   Phase 1C.9 - Modern Main Content / Tiles
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled #pcont4 {
+    padding: 16px 18px 40px !important;
+    background: transparent !important;
+}
+
+/* Existing VICIdial tile */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile {
+    position: relative;
+    margin-bottom: 14px !important;
+
+    border: 1px solid rgba(255,255,255,.06) !important;
+    border-radius: 10px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25,32,48,.96),
+            rgba(15,21,34,.96)
+        ) !important;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,.16) !important;
+
+    overflow: hidden;
+}
+
+/* Tile hover */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile:hover {
+    border-color: rgba(0,200,255,.14) !important;
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.22) !important;
+}
+
+/* Existing detail area */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile.detail {
+    padding: 0 !important;
+}
+
+/* Page-head inside tile */
+#cl-wrapper.vicidial-modern-enabled #pcont4 .fd-tile .page-head {
+    margin: 0 !important;
+    padding: 13px 16px !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,.05) !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+}
+
+/* Page links */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head a {
+    display: inline-block;
+    margin-right: 5px;
+
+    color: #aeb9c9 !important;
+    font-size: 11px !important;
+    font-weight: 500;
+
+    text-decoration: none !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head a:hover {
+    color: #00c8ff !important;
+}
+
+/* Separators */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 .fd-tile .page-head {
+    color: rgba(255,255,255,.18) !important;
+}
+
+/* Content links */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 a {
+    transition:
+        color .2s ease,
+        background-color .2s ease;
+}
+
+/* Forms / tables inside main area */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 table {
+    border-color: rgba(255,255,255,.06) !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 select,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 textarea {
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 6px !important;
+    background: rgba(255,255,255,.035) !important;
+    color: #dce4ef !important;
+}
+
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input:focus,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 select:focus,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 textarea:focus {
+    border-color: rgba(0,200,255,.35) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(0,200,255,.07) !important;
+}
+
+/* Buttons */
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 button,
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="submit"],
+#cl-wrapper.vicidial-modern-enabled
+#pcont4 input[type="button"] {
+    border-radius: 6px !important;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+    #cl-wrapper.vicidial-modern-enabled #pcont4 {
+        padding: 12px !important;
+    }
+
+    #cl-wrapper.vicidial-modern-enabled
+    #pcont4 .fd-tile {
+        margin-bottom: 10px !important;
+    }
+}
+

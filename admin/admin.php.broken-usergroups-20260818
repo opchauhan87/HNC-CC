@@ -48929,7 +48929,7 @@ if ($ADD=="0A")
 	 $stmt="SELECT user,full_name,phone_login,user_level,user_group,active from vicidial_users  where user_level <= $LOGuser_level $LOGadmin_viewable_groupsSQL $SQLstatus $SQLorder";
 	$rslt=mysql_to_mysqli($stmt, $link);
 	$people_to_print = mysqli_num_rows($rslt);
-		echo "<center><TABLE class=\"hover centerline user-listings-modern-table\" width=$section_width cellspacing=0 cellpadding=1>\n";
+	echo "<center><TABLE class=\"table_list hover centerline\" width=$section_width cellspacing=0 cellpadding=1>\n";
 	echo "<thead><tr>";
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$USERlink\"><B>"._QXZ("USER ID")."</B></a></th>";
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$NAMElink\"><B>"._QXZ("FULL NAME")."</B></a></th>";
@@ -48938,7 +48938,6 @@ if ($ADD=="0A")
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$GROUPlink\"><B>"._QXZ("GROUP")."</B></a></th>";
 	echo "<th><B>"._QXZ("ACTIVE")."</B></th>";
 	echo "<th><B>"._QXZ("LINKS")."</B></th></tr></thead>\n";
-		echo "<tbody>";
 
 	$o=0;
 	while ($people_to_print > $o) 
@@ -48958,7 +48957,6 @@ if ($ADD=="0A")
 		$o++;
 		}
 
-		echo "</tbody>";
 	echo "</TABLE></div></div></div></div></div></div></center></div>\n";
 	}
 
@@ -50251,116 +50249,67 @@ if ($ADD==100000)
 			<div class=\"col-md-12 no-padding\">
 			<div class=\"block-flat\"><div class=\"header\"><h3>"._QXZ("USER GROUPS LISTINGS")."</h3></div>";
 	//echo "<img src=\"images/icon_black_usergroups.png\" alt=\"User Groups\" width=42 height=42> "._QXZ("USER GROUPS LISTINGS").":\n";
-	echo "<center><div class=\"col-md-12\"><div class=\"content\"><TABLE class='table_list hover centerline'width=$section_width cellspacing=0 cellpadding=1>\n";
-	echo "<thead><tr>";
-	echo "<th><B>"._QXZ("USER GROUP")."</B></th>";
-	echo "<th><B>"._QXZ("GROUP NAME")."</B></th>";
-	echo "<td><B>"._QXZ("USERS")."</B></td>";
-	echo "<td><B>"._QXZ("ACTIVE")."</B></td>";
-	echo "<td><B>"._QXZ("2ND")."</B></td>";
-	echo "<th><B>"._QXZ("FORCE TIMECLOCK")."</B></th>";
-	echo "<th align=center><B>"._QXZ("MODIFY")."</B></th></tr></thead>\n";
+		echo '<div class="usergroups-modern-wrap">';
+		echo '<table class="table_list hover centerline usergroups-modern-table">';
+		echo "<thead><tr>";
+		echo "<th>"._QXZ("USER GROUP")."</th>";
+		echo "<th>"._QXZ("GROUP NAME")."</th>";
+		echo "<th>"._QXZ("USERS")."</th>";
+		echo "<th>"._QXZ("ACTIVE")."</th>";
+		echo "<th>"._QXZ("2ND")."</th>";
+		echo "<th>"._QXZ("FORCE TIMECLOCK")."</th>";
+		echo "<th>"._QXZ("MODIFY")."</th>";
+		echo "</tr></thead>";
 
-	$o=0;
-	$Uuser_group = $MT;
-	$Ugroup_name = $MT;
-	$Uforced_timeclock_login = $MT;
-	while ($usergroups_to_print > $o) 
-		{
-		$row=mysqli_fetch_row($rslt);
-		$Uuser_group[$o] =				$row[0];
-		$Ugroup_name[$o] =				$row[1];
-		$Uforced_timeclock_login[$o] =	$row[2];
-		$o++;
-		}
+		$o=0;
+		$Uuser_group = $MT;
+		$Ugroup_name = $MT;
+		$Uforced_timeclock_login = $MT;
+		while ($usergroups_to_print > $o)
+			{
+			$row=mysqli_fetch_row($rslt);
+			$Uuser_group[$o] = $row[0];
+			$Ugroup_name[$o] = $row[1];
+			$Uforced_timeclock_login[$o] = $row[2];
+			$o++;
+			}
 
-	$o=0;
-	while ($usergroups_to_print > $o) 
-		{
-		$stmt="SELECT count(*) from vicidial_users where user_group='$Uuser_group[$o]' $LOGadmin_viewable_groupsSQL";
-		$rslt=mysql_to_mysqli($stmt, $link);
-		$row=mysqli_fetch_row($rslt);
-		$users_count = $row[0];
+		$o=0;
+		while ($usergroups_to_print > $o)
+			{
+			$stmt="SELECT count(*) from vicidial_users where user_group='$Uuser_group[$o]' $LOGadmin_viewable_groupsSQL";
+			$rslt=mysql_to_mysqli($stmt, $link);
+			$row=mysqli_fetch_row($rslt);
+			$users_count = $row[0];
 
-		$stmt="SELECT count(*) from vicidial_users where user_group='$Uuser_group[$o]' and active='Y' $LOGadmin_viewable_groupsSQL";
-		$rslt=mysql_to_mysqli($stmt, $link);
-		$row=mysqli_fetch_row($rslt);
-		$active_count = $row[0];
+			$stmt="SELECT count(*) from vicidial_users where user_group='$Uuser_group[$o]' and active='Y' $LOGadmin_viewable_groupsSQL";
+			$rslt=mysql_to_mysqli($stmt, $link);
+			$row=mysqli_fetch_row($rslt);
+			$active_count = $row[0];
 
-		$stmt="SELECT count(*) from vicidial_users where user_group_two='$Uuser_group[$o]' $LOGadmin_viewable_groupsSQL";
-		$rslt=mysql_to_mysqli($stmt, $link);
-		$row=mysqli_fetch_row($rslt);
-		$second_count = $row[0];
-		if (preg_match('/1$|3$|5$|7$|9$/i', $o))
-			{$bgcolor='';} 
-		else
-			{$bgcolor='';} 
-		echo "<tr $bgcolor"; if ($SSadmin_row_click > 0) {echo " onclick=\"window.document.location='$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]'\"";} echo "><td><a href=\"$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]\">$Uuser_group[$o]</a></td>";
-		echo "<td> $Ugroup_name[$o]</td>";
-		echo "<td> $users_count</td>";
-		echo "<td> $active_count</td>";
-		echo "<td> $second_count</td>";
-		echo "<td> "._QXZ("$Uforced_timeclock_login[$o]")."</td>";
-		echo "<td ><a class='btn alert-success' href=\"$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]\">"._QXZ("MODIFY")."</a></td></tr>\n";
-		$o++;
-		}
+			$stmt="SELECT count(*) from vicidial_users where user_group_two='$Uuser_group[$o]' $LOGadmin_viewable_groupsSQL";
+			$rslt=mysql_to_mysqli($stmt, $link);
+			$row=mysqli_fetch_row($rslt);
+			$second_count = $row[0];
 
-	echo "</TABLE></center>\n";
-	}
+			echo "<tr";
+			if ($SSadmin_row_click > 0) {
+				echo " onclick=\"window.document.location='$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]'\"";
+			}
+			echo ">";
 
+			echo "<td class=\"usergroup-name\"><a href=\"$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]\">$Uuser_group[$o]</a></td>";
+			echo "<td class=\"group-name\">$Ugroup_name[$o]</td>";
+			echo "<td class=\"count-cell\">$users_count</td>";
+			echo "<td class=\"count-cell active-count\">$active_count</td>";
+			echo "<td class=\"count-cell\">$second_count</td>";
+			echo "<td class=\"timeclock-cell\">"._QXZ("$Uforced_timeclock_login[$o]")."</td>";
+			echo "<td class=\"modify-cell\"><a class=\"btn alert-success\" href=\"$PHP_SELF?ADD=311111&user_group=$Uuser_group[$o]\">"._QXZ("MODIFY")."</a></td>";
+			echo "</tr>\n";
+			$o++;
+			}
 
-######################
-# ADD=1000000 display all scripts
-######################
-if ($ADD==1000000)
-	{
-	//echo "<TABLE><TR><TD>\n";
-	//echo "<FONT FACE=\"ARIAL,HELVETICA\" COLOR=BLACK SIZE=2>";
-
-	$stmt="SELECT script_id,script_name,active,user_group,script_color from vicidial_scripts $whereLOGadmin_viewable_groupsSQL order by script_id;";
-	$rslt=mysql_to_mysqli($stmt, $link);
-	$scripts_to_print = mysqli_num_rows($rslt);
-
-	echo "<div id=\"pcont4\" class=\"container-fluid\">
-			<div class=\"cl-mcont\">
-			<div class=\"row\">
-			<div class=\"col-md-12 no-padding\">
-			<div class=\"block-flat\">
-			<div class=\"header\"><h3>"._QXZ("SCRIPTS LISTINGS")."</h3></div>";
-	//echo "<img src=\"images/icon_black_scripts.png\" alt=\"Scripts\" width=42 height=42> "._QXZ("SCRIPTS LISTINGS").":\n";
-	echo "<center><div class=\"col-md-12\"><div class=\"content\"><TABLE class='table_list hover centerline' width=$section_width cellspacing=0 cellpadding=1>\n";
-	echo "<thead><tr>";
-	echo "<th><B>"._QXZ("SCRIPT ID")."</B></th>";
-	echo "<th><B>"._QXZ("SCRIPT NAME")."</B></th>";
-	echo "<th><B>"._QXZ("ACTIVE")." &nbsp; </B></th>";
-	echo "<th><B>"._QXZ("ADMIN GROUP")." &nbsp; </B></th>";
-	echo "<th><B>"._QXZ("COLOR")." &nbsp; </B></th>";
-		echo "<th align=center><B>"._QXZ("MODIFY")."</B></th></tr></thead>\n";
-
-	$o=0;
-	while ($scripts_to_print > $o) 
-		{
-		$row=mysqli_fetch_row($rslt);
-		if (preg_match('/1$|3$|5$|7$|9$/i', $o))
-			{$bgcolor='';} 
-		else
-			{$bgcolor='';} 
-		echo "<tr $bgcolor"; if ($SSadmin_row_click > 0) {echo " onclick=\"window.document.location='$PHP_SELF?ADD=3111111&script_id=$row[0]'\"";} echo "><td><a href=\"$PHP_SELF?ADD=3111111&script_id=$row[0]\">$row[0]</a></td>";
-		echo "<td> $row[1]</td>";
-		echo "<td>"._QXZ("$row[2]")."</td>";
-		echo "<td>".(preg_match('/\-\-ALL\-\-/', $row[3]) ? _QXZ("$row[3]") : $row[3])."</td>";
-		echo "<td bgcolor=\"$row[4]\"> &nbsp;</td>";
-		echo "<td align=center><a class='btn alert-success' href=\"$PHP_SELF?ADD=3111111&script_id=$row[0]\">"._QXZ("MODIFY")."</a></td></tr>\n";
-		$o++;
-		}
-
-	echo "</div></div></TABLE></div></div></div></div></div></center>\n";
-	}
-
-
-######################
-# ADD=10000000 display all filters
-######################
+		echo "</table></div>";
 if ($ADD==10000000)
 	{
 	// echo "<TABLE><TR><TD>\n";

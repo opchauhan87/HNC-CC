@@ -31195,7 +31195,7 @@ echo "<tr ><td>"._QXZ("Inbound Manual Dial Agent Forced Ready Seconds").": </td>
 			$rslt=mysql_to_mysqli($stmt, $link);
 			$lists_to_print = mysqli_num_rows($rslt);
 
-			echo "<center><TABLE class=\"table_list hover centerline campaign-modify-lists-table\" width=$section_width cellspacing=0 cellpadding=1>\n";
+			echo "<center><TABLE class=\"table_list hover centerline \" width=$section_width cellspacing=0 cellpadding=1>\n";
 			echo "<thead><TR>";
 			echo "<th><a href=\"$PHP_SELF?ADD=31&campaign_id=$campaign_id&$LISTlink\"><B>"._QXZ("LIST ID")."</B></a></th>";
 			echo "<th><a href=\"$PHP_SELF?ADD=31&campaign_id=$campaign_id&$NAMElink\"><B>"._QXZ("LIST NAME")."</B></a></th>";
@@ -33636,7 +33636,7 @@ if ($ADD==32)
 			$o++;
 			}
 
-	echo "</TABLE></div></div></div></div></div></center>\n";
+	echo "</div></div></TABLE></div></div></div></div></div></center>\n";
 	}
 
 
@@ -48929,7 +48929,7 @@ if ($ADD=="0A")
 	 $stmt="SELECT user,full_name,phone_login,user_level,user_group,active from vicidial_users  where user_level <= $LOGuser_level $LOGadmin_viewable_groupsSQL $SQLstatus $SQLorder";
 	$rslt=mysql_to_mysqli($stmt, $link);
 	$people_to_print = mysqli_num_rows($rslt);
-		echo "<center><TABLE class=\"hover centerline user-listings-modern-table\" width=$section_width cellspacing=0 cellpadding=1>\n";
+	echo "<center><TABLE class=\"table_list hover centerline\" width=$section_width cellspacing=0 cellpadding=1>\n";
 	echo "<thead><tr>";
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$USERlink\"><B>"._QXZ("USER ID")."</B></a></th>";
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$NAMElink\"><B>"._QXZ("FULL NAME")."</B></a></th>";
@@ -48938,7 +48938,6 @@ if ($ADD=="0A")
 	echo "<th><a href=\"$PHP_SELF?ADD=0A&status=$status&$GROUPlink\"><B>"._QXZ("GROUP")."</B></a></th>";
 	echo "<th><B>"._QXZ("ACTIVE")."</B></th>";
 	echo "<th><B>"._QXZ("LINKS")."</B></th></tr></thead>\n";
-		echo "<tbody>";
 
 	$o=0;
 	while ($people_to_print > $o) 
@@ -48958,7 +48957,6 @@ if ($ADD=="0A")
 		$o++;
 		}
 
-		echo "</tbody>";
 	echo "</TABLE></div></div></div></div></div></div></center></div>\n";
 	}
 
@@ -49084,7 +49082,7 @@ echo "<div id=\"pcont4\" class=\"container-fluid\">
 
 
 
-	echo "</div></div><center><div class=\"col-md-12\"><div class=\"content\"><TABLE class=\"table_list hover centerline campaign-listing-table\"width=$section_width cellspacing=0 cellpadding=1>\n";
+	echo "</div><center><div class=\"col-md-12\"><div class=\"content\"><TABLE class=\"table_list hover centerline\"width=$section_width cellspacing=0 cellpadding=1>\n";
 
 	 echo "<thead><tr>";
 	 echo "<th><CENTER><B>"._QXZ("CAMPAIGN ID")."</B></CENTER></th>";
@@ -49233,7 +49231,7 @@ if ($ADD==100)
 			}
 		}
 	echo "</div></div><center><div class=\"col-md-12\"><div class=\"content\">
-	 <TABLE class=\"table_list hover centerline list-listing-table\" width=$section_width cellspacing=0 cellpadding=1>\n";
+	 <TABLE class=\"table_list hover centerline\" width=$section_width cellspacing=0 cellpadding=1>\n";
 echo "<thead><TR>";
 	echo "<th><a href=\"$PHP_SELF?ADD=100&$LISTlink$rankLINK\"><B>"._QXZ("LIST ID")."</B></a></th>";
 	echo "<th><a href=\"$PHP_SELF?ADD=100&$NAMElink$rankLINK\"><B>"._QXZ("LIST NAME")."</B></a></th>";
@@ -49315,7 +49313,7 @@ echo "<thead><TR>";
 		$o++;
 		}
 
-	echo "</TABLE></div></div></div></div></div></center>\n";
+	echo "</div></div></TABLE></div></div></div></div></div></center>\n";
 	}
 
 
@@ -56167,7 +56165,6 @@ echo "</FONT>\n";
 <TD BGCOLOR=#<?php echo $SSframe_background ?>>
 </TD></TR>
 <TABLE>
-<?php include('admin_footer.php'); ?>
 </body>
 <script language="Javascript">
 if (!window.A_TCALSIDX)

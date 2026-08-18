@@ -1,0 +1,84 @@
+/* ============================================================
+   VICIdial Modern Theme - Sprint 1
+   Page Shell
+   ============================================================ */
+
+#cl-wrapper.vicidial-modern-enabled {
+    background: #0a0e1a !important;
+    min-height: 100vh;
+}
+
+#cl-wrapper.vicidial-modern-enabled body {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar {
+    background: #0a0e1a;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .menu-space,
+#cl-wrapper.vicidial-modern-enabled .cl-sidebar .content {
+    background: transparent;
+}
+
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    background: #0a0e1a;
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a {
+    color: rgba(255,255,255,0.65);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.05);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a {
+    color: #ffffff;
+    background: rgba(72,49,212,0.15);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a i {
+    color: rgba(255,255,255,0.45);
+}
+
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li.active > a i,
+#cl-wrapper.vicidial-modern-enabled .cl-vnavigation li a:hover i {
+    color: #00c8ff;
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu {
+    background: rgba(255,255,255,0.02);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a {
+    color: rgba(255,255,255,0.55);
+}
+
+#cl-wrapper.vicidial-modern-enabled .sub-menu li a:hover {
+    color: #ffffff;
+    background: rgba(255,255,255,0.04);
+}
+
+/* Main content */
+#cl-wrapper.vicidial-modern-enabled #pcont {
+    color: #ffffff;
+}
+
+/* Remove old bright borders/backgrounds */
+#cl-wrapper.vicidial-modern-enabled .border {
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Modern scrollbar */
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#cl-wrapper.vicidial-modern-enabled ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+}
